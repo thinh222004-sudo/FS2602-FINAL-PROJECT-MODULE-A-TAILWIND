@@ -1,0 +1,53 @@
+/* ! RESET CSS */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* ! COMMON SETTINGS */
+:root {
+	/* * Thường dùng để khai báo biến vì đây là vùng global */
+}
+
+html {
+	/* * Thường dùng để khai báo các properties css mà có sự kế thừa, dùng chung: font-size, font-family, font-weight */
+
+	font-family: "Rubik", sans-serif;
+	color: gray;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	transition: all ease-in-out 0.5s;
+}
+
+button:hover {
+	box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.3);
+}
+
+.flex-start {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}

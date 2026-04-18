@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Landing Page</title>
+		<script src="https://cdn.tailwindcss.com?plugins=typography,forms,aspect-ratio"></script>
+		<script src="./assets/tailwind.config.js"></script>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<style type="text/tailwindcss">
+			@layer base {
+				h1 {
+					/* @apply text-2xl font-bold; */
+				}
+				table {
+					/* @apply border-collapse; */
+				}
+			}
+
+			@layer components {
+				.btn-primary {
+					/* @apply bg-gradient-to-r from-red-500 to-red-400 py-[12px] px-[12px] rounded-xl; */
+				}
+
+				.btn-secondary {
+					/* @apply bg-blue-200 py-[12px] px-[12px] rounded-xl; */
+				}
+
+				.header {
+					/* @apply flex justify-between px-[32px] py-[18px] w-full items-center; */
+				}
+			}
+			@layer utilities {
+				.content-auto {
+					/* content-visibility: auto; */
+				}
+			}
+		</style>
+
+		<link rel="stylesheet" href="./assets/css/main.css" />
+	</head>
+	<style>
+		body {
+			color: gray;
+		}
+	</style>
+	<body>
+		<div class="flex flex-col bg-white">
+			<div class="self-stretch bg-[#E7E7E3]">
+				<div class="flex flex-col items-center self-stretch pt-8">
+					<div
+						class="flex justify-between items-center self-stretch bg-neutral-50 p-8 mb-6 mx-[60px] rounded-3xl"
+					>
+						<div class="flex shrink-0 items-center">
+							<span class="text-[#232321] text-base font-bold mr-[42px]">
+								New Drops 🔥
+							</span>
+							<div class="flex shrink-0 items-center mr-10 gap-[5px]">
+								<span class="text-[#232321] text-base font-bold"> Men </span>
+								<img
+									src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/ycqrjs8p_expires_30_days.png"
+									class="w-3 h-3 object-fill"
+								/>
+							</div>
+							<div class="flex shrink-0 items-center gap-1">
+								<span class="text-[#232321] text-base font-bold"> Women </span>
+								<img
+									src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/kwak1wtp_expires_30_days.png"
+									class="w-3 h-3 object-fill"
+								/>
+							</div>
+						</div>
+						<img
+							src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/qxgez2nl_expires_30_days.png"
+							class="w-32 h-8 rounded-3xl object-fill"
+						/>
+						<div class="flex shrink-0 items-center">
+							<img
+								src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/fxqh46wm_expires_30_days.png"
+								class="w-7 h-7 ml-[137px] mr-10 object-fill"
+							/>
+							<img
+								src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/9eshhzgg_expires_30_days.png"
+								class="w-6 h-6 mr-10 object-fill"
+							/>
+							<button
+								class="flex flex-col shrink-0 items-start bg-[#FFA52F] text-left py-[5px] px-[11px] rounded-[32px] border-0"
+								onclick="alert('Pressed!')"
+								}
+							>
+								<span class="text-[#232321] text-base font-bold"> 0 </span>
+							</button>
+						</div>
+					</div>
+					<div
+						class="flex flex-col items-start self-stretch mb-[90px] mx-[60px] gap-6"
+					>
+						<span class="text-[#232321] text-[223px] font-bold">
+							Do it right
+						</span>
+						<div
+							class="flex flex-col items-start self-stretch bg-[url('https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/mpdvpzay_expires_30_days.png')] bg-[length:100%_100%] pt-20"
+						>
+							<button
+								class="flex flex-col items-start bg-[#232321] text-left p-6 mb-[65px] rounded-br-2xl rounded-bl-2xl border-0"
+								onclick="alert('Pressed!')"
+								}
+							>
+								<span class="text-[#E7E7E3] text-base font-bold w-3.5">
+									Nike product of the year
+								</span>
+							</button>
+							<div
+								class="flex justify-between items-start self-stretch mb-8 ml-12 mr-8"
+							>
+								<div class="flex flex-col shrink-0 items-start mt-[94px] gap-6">
+									<div class="flex flex-col items-start">
+										<span class="text-white text-[74px] font-bold">
+											NIKE AIR MAX
+										</span>
+										<span
+											class="text-[#E7E7E3] text-2xl font-bold w-[424px] mr-[66px]"
+										>
+											Nike introducing the new air max for everyone's comfort
+										</span>
+									</div>
+									<button
+										class="flex flex-col items-start bg-[#4A69E2] text-left py-[15px] px-8 mr-[352px] rounded-lg border-0"
+										onclick="alert('Pressed!')"
+										}
+									>
+										<span class="text-white text-sm"> Shop now </span>
+									</button>
+								</div>
+								<div class="flex flex-col shrink-0 items-start gap-4">
+									<img
+										src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/drganq0d_expires_30_days.png"
+										class="w-40 h-40 object-fill"
+									/>
+									<img
+										src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/ufntuuey_expires_30_days.png"
+										class="w-40 h-40 object-fill"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col self-stretch mb-32 mx-[60px] gap-8">
+						<div class="flex justify-between items-start self-stretch">
+							<span class="text-[#232321] text-[74px] font-bold w-[576px]">
+								Don’t miss out new drops
+							</span>
+							<button
+								class="flex flex-col shrink-0 items-start bg-[#4A69E2] text-left py-[15px] px-8 mt-[92px] rounded-lg border-0"
+								onclick="alert('Pressed!')"
+								}
+							>
+								<span class="text-white text-sm"> Shop New Drops </span>
+							</button>
+						</div>
+						<div class="flex items-center self-stretch gap-4">
+							<div class="flex flex-1 flex-col gap-4">
+								<div class="self-stretch bg-neutral-50 p-2 rounded-[28px]">
+									<div
+										class="flex flex-col items-start self-stretch bg-[url('https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/8fgpsebz_expires_30_days.png')] bg-[length:100%_100%] pb-[296px] rounded-[28px]"
+									>
+										<button
+											class="flex flex-col items-start bg-[#4A69E2] text-left py-3 px-4 rounded-tl-3xl rounded-br-3xl border-0"
+											onclick="alert('Pressed!')"
+											}
+										>
+											<span class="text-white text-xs font-bold"> New </span>
+										</button>
+									</div>
+								</div>
+								<div
+									class="flex flex-col items-start self-stretch pt-1 gap-[22px]"
+								>
+									<span class="text-[#232321] text-2xl font-bold w-[299px]">
+										ADIDAS 4DFWD X PARLEY RUNNING SHOES
+									</span>
+									<button
+										class="flex flex-col items-center self-stretch bg-[#232321] text-left py-[15px] rounded-lg border-0"
+										onclick="alert('Pressed!')"
+										}
+									>
+										<span class="text-white text-sm">
+											View Product - $125
+										</span>
+									</button>
+								</div>
+							</div>
+							<div class="flex flex-1 flex-col gap-4">
+								<div class="self-stretch bg-neutral-50 p-2 rounded-[28px]">
+									<div
+										class="flex flex-col items-start self-stretch bg-[url('https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/8av5mqnt_expires_30_days.png')] bg-[length:100%_100%] pb-[296px] rounded-[28px]"
+									>
+										<button
+											class="flex flex-col items-start bg-[#4A69E2] text-left py-3 px-4 rounded-tl-3xl rounded-br-3xl border-0"
+											onclick="alert('Pressed!')"
+											}
+										>
+											<span class="text-white text-xs font-bold"> New </span>
+										</button>
+									</div>
+								</div>
+								<div
+									class="flex flex-col items-start self-stretch pt-1 gap-[22px]"
+								>
+									<span class="text-[#232321] text-2xl font-bold w-[299px]">
+										ADIDAS 4DFWD X PARLEY RUNNING SHOES
+									</span>
+									<button
+										class="flex flex-col items-center self-stretch bg-[#232321] text-left py-[15px] rounded-lg border-0"
+										onclick="alert('Pressed!')"
+										}
+									>
+										<span class="text-white text-sm">
+											View Product - $125
+										</span>
+									</button>
+								</div>
+							</div>
+							<div class="flex flex-1 flex-col gap-4">
+								<div class="self-stretch bg-neutral-50 p-2 rounded-[28px]">
+									<div
+										class="flex flex-col items-start self-stretch bg-[url('https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/2rme8ny1_expires_30_days.png')] bg-[length:100%_100%] pb-[296px] rounded-[28px]"
+									>
+										<button
+											class="flex flex-col items-start bg-[#4A69E2] text-left py-3 px-4 rounded-tl-3xl rounded-br-3xl border-0"
+											onclick="alert('Pressed!')"
+											}
+										>
+											<span class="text-white text-xs font-bold"> New </span>
+										</button>
+									</div>
+								</div>
+								<div
+									class="flex flex-col items-start self-stretch pt-1 gap-[22px]"
+								>
+									<span class="text-[#232321] text-2xl font-bold w-[299px]">
+										ADIDAS 4DFWD X PARLEY RUNNING SHOES
+									</span>
+									<button
+										class="flex flex-col items-center self-stretch bg-[#232321] text-left py-[15px] rounded-lg border-0"
+										onclick="alert('Pressed!')"
+										}
+									>
+										<span class="text-white text-sm">
+											View Product - $125
+										</span>
+									</button>
+								</div>
+							</div>
+							<div class="flex flex-1 flex-col gap-4">
+								<div class="self-stretch bg-neutral-50 p-2 rounded-[28px]">
+									<div
+										class="flex flex-col items-start self-stretch bg-[url('https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/ta6xh3vz_expires_30_days.png')] bg-[length:100%_100%] pb-[296px] rounded-[28px]"
+									>
+										<button
+											class="flex flex-col items-start bg-[#4A69E2] text-left py-3 px-4 rounded-tl-3xl rounded-br-3xl border-0"
+											onclick="alert('Pressed!')"
+											}
+										>
+											<span class="text-white text-xs font-bold"> New </span>
+										</button>
+									</div>
+								</div>
+								<div
+									class="flex flex-col items-start self-stretch pt-1 gap-[22px]"
+								>
+									<span class="text-[#232321] text-2xl font-bold w-[299px]">
+										ADIDAS 4DFWD X PARLEY RUNNING SHOES
+									</span>
+									<button
+										class="flex flex-col items-center self-stretch bg-[#232321] text-left py-[15px] rounded-lg border-0"
+										onclick="alert('Pressed!')"
+										}
+									>
+										<span class="text-white text-sm">
+											View Product - $125
+										</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="flex flex-col self-stretch bg-[#232321] pt-[90px] mb-32 gap-16"
+					>
+						<div
+							class="flex justify-between items-start self-stretch mx-[60px]"
+						>
+							<span class="text-white text-[74px] font-bold"> Categories </span>
+							<div class="flex shrink-0 items-center mt-[30px] gap-4">
+								<img
+									src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/13ant40c_expires_30_days.png"
+									class="w-10 h-10 object-fill"
+								/>
+								<img
+									src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/k2fi8hcl_expires_30_days.png"
+									class="w-10 h-10 object-fill"
+								/>
+							</div>
+						</div>
+						<div
+							class="flex items-center self-stretch ml-[60px] rounded-tl-[48px]"
+						>
+							<div
+								class="flex flex-1 flex-col items-start bg-[#ECEEF0] pb-[30px] pl-[105px] rounded-tl-[64px]"
+							>
+								<div class="flex flex-col items-start relative">
+									<img
+										src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/t2q35tv7_expires_30_days.png"
+										class="w-[480px] h-[600px] object-fill"
+									/>
+									<span
+										class="text-[#232321] text-4xl font-bold w-[187px] absolute bottom-[30px] left-[-57px]"
+									>
+										Lifestyle<br />Shoes
+									</span>
+								</div>
+								<img
+									src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/xtataoxj_expires_30_days.png"
+									class="w-12 h-12 ml-[477px] object-fill"
+								/>
+							</div>
+							<div
+								class="flex flex-1 flex-col items-start bg-[#F6F6F6] pb-[30px] pl-[105px]"
+							>
+								<div class="flex flex-col items-start relative">
+									<img
+										src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/urtmhixd_expires_30_days.png"
+										class="w-[480px] h-[600px] object-fill"
+									/>
+									<span
+										class="text-[#232321] text-4xl font-bold w-[231px] absolute bottom-[30px] left-[-57px]"
+									>
+										Basketball<br />Shoes
+									</span>
+								</div>
+								<img
+									src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/l0oq1sbb_expires_30_days.png"
+									class="w-12 h-12 ml-[477px] object-fill"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-col self-stretch mb-32 mx-[60px] gap-12">
+						<div class="flex justify-between items-center self-stretch">
+							<span class="text-[#232321] text-[74px] font-bold">
+								Reviews
+							</span>
+							<button
+								class="flex flex-col shrink-0 items-start bg-[#4A69E2] text-left py-[15px] px-8 rounded-lg border-0"
+								onclick="alert('Pressed!')"
+								}
+							>
+								<span class="text-white text-sm"> See all </span>
+							</button>
+						</div>
+						<div class="flex items-center self-stretch">
+							<div class="flex flex-1 flex-col items-start mr-4">
+								<div
+									class="flex flex-col self-stretch bg-neutral-50 p-8 gap-2 rounded-tl-[32px] rounded-tr-[32px]"
+								>
+									<div class="flex items-start self-stretch gap-2">
+										<div class="flex flex-1 flex-col items-start gap-2">
+											<span class="text-[#232321] text-2xl font-bold">
+												Good Quality
+											</span>
+											<span class="text-[#232321] text-base w-[259px]">
+												I highly recommend shopping from kicks
+											</span>
+										</div>
+										<img
+											src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/ty10e0gd_expires_30_days.png"
+											class="w-16 h-16 object-fill"
+										/>
+									</div>
+									<div class="flex items-center self-stretch gap-1">
+										<img
+											src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/a2bzf0xb_expires_30_days.png"
+											class="w-[120px] h-6 object-fill"
+										/>
+										<span class="text-[#232321] text-base font-bold">
+											5.0
+										</span>
+									</div>
+								</div>
+								<img
+									src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/fg5crboh_expires_30_days.png"
+									class="w-[429px] h-[325px] object-fill"
+								/>
+							</div>
+							<div class="flex flex-1 flex-col items-start mr-[15px]">
+								<div
+									class="flex flex-col self-stretch bg-neutral-50 py-8 px-[31px] gap-2 rounded-tl-[32px] rounded-tr-[32px]"
+								>
+									<div class="flex items-start self-stretch gap-[7px]">
+										<div class="flex flex-1 flex-col items-start gap-2">
+											<span class="text-[#232321] text-2xl font-bold">
+												Good Quality
+											</span>
+											<span class="text-[#232321] text-base w-[259px]">
+												I highly recommend shopping from kicks
+											</span>
+										</div>
+										<img
+											src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/9vo8arh5_expires_30_days.png"
+											class="w-16 h-16 object-fill"
+										/>
+									</div>
+									<div class="flex items-center self-stretch gap-1">
+										<img
+											src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/icti60su_expires_30_days.png"
+											class="w-[120px] h-6 object-fill"
+										/>
+										<span class="text-[#232321] text-base font-bold">
+											5.0
+										</span>
+									</div>
+								</div>
+								<img
+									src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/i3h6upcu_expires_30_days.png"
+									class="w-[429px] h-[325px] object-fill"
+								/>
+							</div>
+							<div class="flex flex-1 flex-col items-start">
+								<div
+									class="flex flex-col self-stretch bg-neutral-50 py-8 px-[31px] gap-2 rounded-tl-[32px] rounded-tr-[32px]"
+								>
+									<div class="flex items-start self-stretch gap-[7px]">
+										<div class="flex flex-1 flex-col items-start gap-2">
+											<span class="text-[#232321] text-2xl font-bold">
+												Good Quality
+											</span>
+											<span class="text-[#232321] text-base w-[259px]">
+												I highly recommend shopping from kicks
+											</span>
+										</div>
+										<img
+											src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/indy7au2_expires_30_days.png"
+											class="w-16 h-16 object-fill"
+										/>
+									</div>
+									<div class="flex items-center self-stretch gap-1">
+										<img
+											src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/ht357b2j_expires_30_days.png"
+											class="w-[120px] h-6 object-fill"
+										/>
+										<span class="text-[#232321] text-base font-bold">
+											5.0
+										</span>
+									</div>
+								</div>
+								<img
+									src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/em28wu66_expires_30_days.png"
+									class="w-[429px] h-[325px] object-fill"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="self-stretch mb-7 mx-[60px]">
+						<div class="flex items-start self-stretch">
+							<div
+								class="flex flex-col shrink-0 items-start mt-16 mb-[39px] ml-[72px] gap-8"
+							>
+								<div class="flex flex-col items-start gap-4">
+									<span class="text-white text-5xl font-bold w-[500px]">
+										Join our KicksPlus Club & get 15% off
+									</span>
+									<span class="text-[#E7E7E3] text-xl font-bold mr-[159px]">
+										Sign up for free! Join the community.
+									</span>
+								</div>
+								<div class="flex items-center mr-[62px] gap-1">
+									<input
+										type="text"
+										placeholder="Email address"
+										class="shrink-0 text-[#E7E7E3] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-white"
+									/>
+									<button
+										class="flex flex-col shrink-0 items-start bg-[#232321] text-left py-[15px] px-6 rounded-lg border-0"
+										onclick="alert('Pressed!')"
+										}
+									>
+										<span class="text-white text-sm"> Submit </span>
+									</button>
+								</div>
+							</div>
+							<div class="flex-1 self-stretch"></div>
+							<img
+								src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/dtxmltxf_expires_30_days.png"
+								class="w-[367px] h-28 mt-[120px] object-fill"
+							/>
+							<div class="flex-1 self-stretch"></div>
+						</div>
+						<div
+							class="flex flex-col self-stretch bg-[#232321] pt-10 rounded-[48px]"
+						>
+							<div
+								class="flex justify-between items-start self-stretch mb-[97px] mx-10"
+							>
+								<div class="flex flex-col shrink-0 items-start gap-1">
+									<span class="text-[#FFA52F] text-4xl font-bold mr-[287px]">
+										About us
+									</span>
+									<span class="text-[#E7E7E3] text-xl font-bold w-[443px]">
+										We are the biggest hyperstore in the universe. We got you
+										all cover with our exclusive collections and latest drops.
+									</span>
+								</div>
+								<div class="flex shrink-0 items-start">
+									<div class="flex flex-col shrink-0 items-start mr-32 gap-4">
+										<span class="text-[#FFA52F] text-2xl font-bold">
+											Categories
+										</span>
+										<div class="flex flex-col items-start mr-7 gap-2">
+											<span class="text-[#E7E7E3] text-xl font-bold mr-[23px]">
+												Runners
+											</span>
+											<span class="text-[#E7E7E3] text-xl font-bold mr-[15px]">
+												Sneakers
+											</span>
+											<span class="text-[#E7E7E3] text-xl font-bold">
+												Basketball
+											</span>
+											<span class="text-[#E7E7E3] text-xl font-bold mr-[21px]">
+												Outdoor
+											</span>
+											<span class="text-[#E7E7E3] text-xl font-bold mr-[62px]">
+												Golf
+											</span>
+											<span class="text-[#E7E7E3] text-xl font-bold mr-[42px]">
+												Hiking
+											</span>
+										</div>
+									</div>
+									<div class="flex flex-col shrink-0 items-start mr-32 gap-4">
+										<span class="text-[#FFA52F] text-2xl font-bold">
+											Company
+										</span>
+										<div class="flex flex-col items-start mr-9 gap-2">
+											<span class="text-[#E7E7E3] text-xl font-bold mr-[18px]">
+												About
+											</span>
+											<span class="text-[#E7E7E3] text-xl font-bold">
+												Contact
+											</span>
+											<span class="text-[#E7E7E3] text-xl font-bold mr-[26px]">
+												Blogs
+											</span>
+										</div>
+									</div>
+									<div class="flex flex-col shrink-0 items-start gap-4">
+										<span class="text-[#FFA52F] text-2xl font-bold mr-[62px]">
+											Follow us
+										</span>
+										<div class="flex items-center gap-6">
+											<img
+												src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/xooqeq2y_expires_30_days.png"
+												class="w-6 h-6 object-fill"
+											/>
+											<img
+												src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/eqyrya5q_expires_30_days.png"
+												class="w-6 h-6 object-fill"
+											/>
+											<img
+												src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/lvyvnqub_expires_30_days.png"
+												class="w-6 h-6 object-fill"
+											/>
+											<img
+												src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/glbvscsd_expires_30_days.png"
+												class="w-6 h-6 object-fill"
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<img
+								src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/nI7tg3Eed0/6kmvzbx8_expires_30_days.png"
+								class="self-stretch h-52 mx-[29px] rounded-[48px] object-fill"
+							/>
+						</div>
+					</div>
+					<span class="text-[#232321] text-base mb-[18px]">
+						© All rights reserved | Made with ❤️ by Visiata Systems
+						International
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
