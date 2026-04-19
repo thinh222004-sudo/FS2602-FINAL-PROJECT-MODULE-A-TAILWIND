@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Style Shoes – Kicks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: "Rubik", system-ui, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <script src="../js/components.js" defer></script>
+</head>
+
+<body class="bg-white">
+    <div class="flex flex-col bg-[#E7E7E3]">
+
+        <div class="pt-6 md:pt-8" id="site-header"></div>
+
+        <main class="px-4 md:px-0">
+
+            <!-- Promo Banner -->
+            <section aria-label="Promotion"
+                class="relative mb-6 md:mb-8 md:mx-[60px] rounded-2xl md:rounded-[64px] overflow-hidden"
+                style="background: url('../imgs/Rectangle 2.jpg') center/cover no-repeat;">
+                <div class="pt-[45px] md:pt-[102px] pl-4 md:pl-10 pb-4 md:pb-[102px]">
+                    <div class="flex flex-col items-start gap-0.5 md:gap-2">
+                        <p class="text-[#E7E7E3] text-xs md:text-2xl font-bold">Limited time only</p>
+                        <h1 class="text-white text-xl md:text-[74px] font-bold">Get 30% off</h1>
+                        <p class="text-[#E7E7E3] text-[10px] md:text-xl w-52 md:w-[454px]">
+                            Sneakers made with your comfort in mind so you can put all of your focus into your next
+                            session.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mobile: filter + sort bar -->
+            <div class="md:hidden flex items-center gap-5 mb-6">
+                <button class="flex flex-1 justify-between items-center bg-[#F4F1F1] py-2 px-4 rounded-lg">
+                    <span class="text-[#232321] text-sm font-bold">Filters</span>
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 6h16M7 12h10M10 18h4" stroke="#232321" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <button class="flex flex-1 justify-between items-center bg-[#F4F1F1] py-2 px-4 rounded-lg">
+                    <span class="text-[#232321] text-sm font-bold">Trending</span>
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9l6 6 6-6" stroke="#232321" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile: title -->
+            <div class="md:hidden flex flex-col items-start mb-6">
+                <h2 class="text-[#232321] text-xl font-bold">Life Style Shoes</h2>
+                <p class="text-[#232321] text-sm font-bold">122 items</p>
+            </div>
+
+            <!-- Desktop: title + sort -->
+            <div class="hidden md:flex justify-between items-center mb-8 mx-[60px]">
+                <div>
+                    <h2 class="text-[#232321] text-4xl font-bold">Life Style Shoes</h2>
+                    <p class="text-[#232321] text-base font-bold">122 items</p>
+                </div>
+                <button
+                    class="flex items-center bg-[#F4F1F1] text-[#232321] text-base font-bold py-[15px] px-4 gap-12 rounded-2xl">
+                    <span>Trending</span>
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9l6 6 6-6" stroke="#232321" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex items-start md:mx-[60px] mb-16 gap-4 md:gap-[18px]">
+
+                <!-- Filters sidebar (desktop only) -->
+                <aside class="hidden md:flex flex-col shrink-0 items-start gap-6 w-[315px]" aria-label="Filters">
+                    <h3 class="text-[#232321] text-2xl font-bold">Filters</h3>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center justify-between w-full">
+                            <span class="text-[#232321] text-base font-bold">Refine by</span>
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="#232321" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <button class="bg-[#4A69E2] text-white text-xs font-bold py-3 px-4 rounded-xl">Mens</button>
+                            <button
+                                class="bg-[#4A69E2] text-white text-xs font-bold py-3 px-4 rounded-xl">Casual</button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center justify-between w-full">
+                            <span class="text-[#232321] text-base font-bold">Size</span>
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="#232321" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-wrap gap-1">
+                            <button class="bg-[#232321] text-white text-sm p-[15px] rounded-lg">38</button>
+                            <button class="bg-[#D2D1D3] text-[#8F8C91] text-sm p-[15px] rounded-lg">39</button>
+                            <button class="bg-[#D2D1D3] text-[#8F8C91] text-sm p-[15px] rounded-lg">40</button>
+                            <button class="bg-white text-[#232321] text-sm py-[15px] px-4 rounded-lg">41</button>
+                            <button class="bg-white text-[#232321] text-sm p-[15px] rounded-lg">42</button>
+                            <button class="bg-white text-[#232321] text-sm p-[15px] rounded-lg">43</button>
+                            <button class="bg-white text-[#232321] text-sm py-[15px] px-3.5 rounded-lg">44</button>
+                            <button class="bg-white text-[#232321] text-sm p-[15px] rounded-lg">45</button>
+                            <button class="bg-white text-[#232321] text-sm p-[15px] rounded-lg">46</button>
+                            <button class="bg-white text-[#232321] text-sm py-[15px] px-4 rounded-lg">47</button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center justify-between w-full">
+                            <span class="text-[#232321] text-base font-bold">Color</span>
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="#232321" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="flex gap-[19px]">
+                                <button class="bg-[#4A69E2] w-12 h-12 rounded-lg" aria-label="Blue"></button>
+                                <button class="bg-[#FFA52F] w-12 h-12 rounded-lg" aria-label="Orange"></button>
+                                <button class="bg-[#232321] w-12 h-12 rounded-lg" aria-label="Black"></button>
+                                <button class="bg-[#234D41] w-12 h-12 rounded-lg" aria-label="Green"></button>
+                                <button class="bg-[#353336] w-12 h-12 rounded-lg" aria-label="Dark"></button>
+                            </div>
+                            <div class="flex gap-[19px]">
+                                <button class="bg-[#F08155] w-12 h-12 rounded-lg" aria-label="Coral"></button>
+                                <button class="bg-[#C9CCC6] w-12 h-12 rounded-lg" aria-label="Gray"></button>
+                                <button class="bg-[#677282] w-12 h-12 rounded-lg" aria-label="Slate"></button>
+                                <button class="bg-[#925513] w-12 h-12 rounded-lg" aria-label="Brown"></button>
+                                <button class="bg-[#BB8056] w-12 h-12 rounded-lg" aria-label="Tan"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center justify-between w-full">
+                            <span class="text-[#232321] text-base font-bold">Category</span>
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="#232321" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <ul class="flex flex-col gap-2">
+                            <li><label class="flex items-center gap-4 cursor-pointer"><input type="checkbox"
+                                        class="w-5 h-5 accent-[#232321]" /><span
+                                        class="text-[#232321] text-base font-bold">Casual shoes</span></label></li>
+                            <li><label class="flex items-center gap-4 cursor-pointer"><input type="checkbox"
+                                        class="w-5 h-5 accent-[#232321]" /><span
+                                        class="text-[#232321] text-base font-bold">Runners</span></label></li>
+                            <li><label class="flex items-center gap-4 cursor-pointer"><input type="checkbox"
+                                        class="w-5 h-5 accent-[#232321]" /><span
+                                        class="text-[#232321] text-base font-bold">Hiking</span></label></li>
+                            <li><label class="flex items-center gap-4 cursor-pointer"><input type="checkbox"
+                                        class="w-5 h-5 accent-[#232321]" /><span
+                                        class="text-[#232321] text-base font-bold">Sneaker</span></label></li>
+                            <li><label class="flex items-center gap-4 cursor-pointer"><input type="checkbox"
+                                        class="w-5 h-5 accent-[#232321]" /><span
+                                        class="text-[#232321] text-base font-bold">Basketball</span></label></li>
+                            <li><label class="flex items-center gap-4 cursor-pointer"><input type="checkbox"
+                                        class="w-5 h-5 accent-[#232321]" /><span
+                                        class="text-[#232321] text-base font-bold">Golf</span></label></li>
+                            <li><label class="flex items-center gap-4 cursor-pointer"><input type="checkbox"
+                                        class="w-5 h-5 accent-[#232321]" /><span
+                                        class="text-[#232321] text-base font-bold">Outdoor</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center justify-between w-full">
+                            <span class="text-[#232321] text-base font-bold">Gender</span>
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="#232321" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <ul class="flex flex-col gap-2">
+                            <li><label class="flex items-center gap-4 cursor-pointer"><input type="checkbox"
+                                        class="w-5 h-5 accent-[#232321]" /><span
+                                        class="text-[#232321] text-base font-bold">Men</span></label></li>
+                            <li><label class="flex items-center gap-4 cursor-pointer"><input type="checkbox"
+                                        class="w-5 h-5 accent-[#232321]" /><span
+                                        class="text-[#232321] text-base font-bold">Women</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-4 w-full">
+                        <div class="flex items-center justify-between w-full">
+                            <span class="text-[#232321] text-base font-bold">Price</span>
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 9l6 6 6-6" stroke="#232321" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <input type="range" min="0" max="1000" value="500" class="w-full accent-[#4A69E2]"
+                            aria-label="Price range" />
+                        <div class="flex justify-between">
+                            <span class="text-[#232321] text-sm font-bold">$0</span>
+                            <span class="text-[#232321] text-sm font-bold">$1000</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Product grid: 2-col mobile / 3-col desktop -->
+                <div class="flex flex-1 flex-col gap-6 md:gap-[38px]">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-5">
+
+                        <article class="flex flex-col gap-2 md:gap-5">
+                            <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
+                                <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
+                                    <img src="../imgs/17.jpg" class="w-full h-full object-cover"
+                                        alt="Ultraboost 1.0 Miami Green" />
+                                    <span
+                                        class="absolute top-0 left-0 bg-[#4A69E2] text-white text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">New</span>
+                                </div>
+                            </div>
+                            <h3 class="text-[#232321] text-base md:text-2xl font-bold">ULTRABOOST 1.0 MIAMI Green</h3>
+                            <a href="./productpage.html"
+                                class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
+                                Product - $125</a>
+                        </article>
+
+                        <article class="flex flex-col gap-2 md:gap-5">
+                            <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
+                                <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
+                                    <img src="../imgs/18.jpg" class="w-full h-full object-cover"
+                                        alt="Adidas Ozelia Shoes Green" />
+                                    <span
+                                        class="absolute top-0 left-0 bg-[#FFA52F] text-[#232321] text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">10%
+                                        off</span>
+                                </div>
+                            </div>
+                            <h3 class="text-[#232321] text-base md:text-2xl font-bold">ADIDAS OZELIA SHOES Green</h3>
+                            <a href="./productpage.html"
+                                class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
+                                Product - $125</a>
+                        </article>
+
+                        <article class="flex flex-col gap-2 md:gap-5">
+                            <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
+                                <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
+                                    <img src="../imgs/19.jpg" class="w-full h-full object-cover"
+                                        alt="Adidas 4DFWD 2 Running Shoes" />
+                                    <span
+                                        class="absolute top-0 left-0 bg-[#4A69E2] text-white text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">New</span>
+                                </div>
+                            </div>
+                            <h3 class="text-[#232321] text-base md:text-2xl font-bold">ADIDAS 4DFWD 2 RUNNING SHOES</h3>
+                            <a href="./productpage.html"
+                                class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
+                                Product - $125</a>
+                        </article>
+
+                        <article class="flex flex-col gap-2 md:gap-5">
+                            <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
+                                <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
+                                    <img src="../imgs/20.jpg" class="w-full h-full object-cover"
+                                        alt="Ultraboost 1.0 Miami Green" />
+                                    <span
+                                        class="absolute top-0 left-0 bg-[#FFA52F] text-[#232321] text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">10%
+                                        off</span>
+                                </div>
+                            </div>
+                            <h3 class="text-[#232321] text-base md:text-2xl font-bold">ULTRABOOST 1.0 MIAMI Green</h3>
+                            <a href="./productpage.html"
+                                class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
+                                Product - $125</a>
+                        </article>
+
+                        <article class="flex flex-col gap-2 md:gap-5">
+                            <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
+                                <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
+                                    <img src="../imgs/21.jpg" class="w-full h-full object-cover"
+                                        alt="Adidas Ozelia Shoes Green" />
+                                    <span
+                                        class="absolute top-0 left-0 bg-[#4A69E2] text-white text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">New</span>
+                                </div>
+                            </div>
+                            <h3 class="text-[#232321] text-base md:text-2xl font-bold">ADIDAS OZELIA SHOES Green</h3>
+                            <a href="./productpage.html"
+                                class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
+                                Product - $125</a>
+                        </article>
+
+                        <article class="flex flex-col gap-2 md:gap-5">
+                            <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
+                                <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
+                                    <img src="../imgs/22.jpg" class="w-full h-full object-cover"
+                                        alt="Adidas 4DFWD 2 Running Shoes" />
+                                    <span
+                                        class="absolute top-0 left-0 bg-[#4A69E2] text-white text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">New</span>
+                                </div>
+                            </div>
+                            <h3 class="text-[#232321] text-base md:text-2xl font-bold">ADIDAS 4DFWD 2 RUNNING SHOES</h3>
+                            <a href="./productpage.html"
+                                class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
+                                Product - $125 ($250)</a>
+                        </article>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Pagination"
+                        class="flex items-center justify-center md:justify-end gap-2 md:mr-[277px]">
+                        <button
+                            class="flex items-center justify-center bg-transparent border border-[#232321] rounded-lg p-2 md:py-[7px] md:px-4">
+                            <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none">
+                                <path d="M10 12L6 8l4-4" stroke="#232321" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button
+                            class="bg-transparent text-[#232321] text-sm py-[7px] px-4 rounded-lg border border-[#232321]">1</button>
+                        <button class="bg-[#232321] text-white text-sm py-[7px] px-4 rounded-lg">2</button>
+                        <span class="text-[#232321] text-sm">...</span>
+                        <button
+                            class="bg-transparent text-[#232321] text-sm py-[7px] px-4 rounded-lg border border-[#232321]">10</button>
+                        <button
+                            class="flex items-center justify-center bg-transparent border border-[#232321] rounded-lg p-2 md:py-[7px] md:px-4">
+                            <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 4l4 4-4 4" stroke="#232321" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+
+        </main>
+
+        <div id="site-footer"></div>
+    </div>
+</body>
+
+</html>

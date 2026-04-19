@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout – Kicks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: "Rubik", system-ui, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <script src="../js/components.js" defer></script>
+</head>
+
+<body class="bg-white">
+    <div class="flex flex-col bg-[#E7E7E3]">
+
+        <div class="pt-6 md:pt-8" id="site-header"></div>
+
+        <main class="flex flex-col items-center px-4 md:px-0 gap-6 mb-10 md:mb-12">
+
+            <!-- Order Details + Summary (mobile first) -->
+            <div class="flex flex-col md:flex-row items-start self-stretch md:mx-[73px] gap-6 md:gap-[47px]">
+
+                <!-- Left: contact + shipping form -->
+                <section class="flex flex-1 flex-col items-start gap-5 md:gap-8 w-full md:pr-[78px]"
+                    aria-labelledby="contact-title">
+
+                    <!-- Mobile: order details card first -->
+                    <div class="md:hidden flex flex-col self-stretch bg-neutral-50 p-4 gap-2 rounded-2xl">
+                        <h2 class="text-[#232321] text-xl font-bold">Order Details</h2>
+                        <div class="flex items-center gap-4">
+                            <img src="../imgs/9.jpg" class="flex-1 h-[179px] object-cover rounded-xl"
+                                alt="Dropset Trainer Shoes" />
+                            <div class="flex flex-1 flex-col items-start gap-2">
+                                <h3 class="text-[#232321] text-base font-bold">DROPSET TRAINER SHOES</h3>
+                                <p class="text-[#232321] text-sm font-bold w-[136px]">Men's Road Running Shoes</p>
+                                <p class="text-[#232321] text-sm font-bold w-[109px]">Enamel Blue/ University White</p>
+                                <div class="flex items-center gap-[18px]">
+                                    <span class="text-[#232321] text-base font-bold">Size 10</span>
+                                    <span class="text-[#232321] text-base font-bold">Quantity 1</span>
+                                </div>
+                                <span class="text-[#4A69E2] text-base font-bold">$130.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile: order summary card -->
+                    <div
+                        class="md:hidden flex flex-col items-start self-stretch bg-neutral-50 py-4 pr-4 gap-4 rounded-2xl">
+                        <h2 class="text-[#232321] text-xl font-bold ml-4">Order Summary</h2>
+                        <dl class="flex flex-col self-stretch ml-4 gap-4">
+                            <div class="flex justify-between">
+                                <dt class="text-[#232321] text-base font-bold">1 ITEM</dt>
+                                <dd class="text-[#232321] text-base font-bold">$130.00</dd>
+                            </div>
+                            <div class="flex justify-between">
+                                <dt class="text-[#232321] text-base font-bold">Delivery</dt>
+                                <dd class="text-[#232321] text-base font-bold">$6.99</dd>
+                            </div>
+                            <div class="flex justify-between">
+                                <dt class="text-[#232321] text-base font-bold">Sales Tax</dt>
+                                <dd class="text-[#232321] text-base font-bold">-</dd>
+                            </div>
+                            <div class="flex justify-between border-t border-[#232321] pt-2">
+                                <dt class="text-[#232321] text-xl font-bold">Total</dt>
+                                <dd class="text-[#232321] text-xl font-bold">$130.00</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <p class="text-[#232321] text-base font-bold">Login and Checkout faster</p>
+
+                    <form class="flex flex-col self-stretch gap-5 md:gap-8" onsubmit="return false;" novalidate>
+                        <div class="flex flex-col gap-2 rounded-2xl">
+                            <h1 id="contact-title" class="text-[#232321] text-2xl md:text-[32px] font-bold">Contact
+                                Details</h1>
+                            <p class="text-[#232321] text-sm md:text-base font-bold">We will use these details to keep
+                                you informed about your delivery.</p>
+                        </div>
+                        <input type="email" placeholder="Email" autocomplete="email" required
+                            class="self-stretch text-[#79767C] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-[#232321]" />
+
+                        <fieldset class="flex flex-col gap-4 border-0 p-0">
+                            <legend class="text-[#232321] text-xl md:text-[32px] font-bold mb-2">Shipping Address
+                            </legend>
+                            <input type="text" placeholder="First Name*" autocomplete="given-name" required
+                                class="self-stretch text-[#79767C] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-[#232321]" />
+                            <input type="text" placeholder="Last Name*" autocomplete="family-name" required
+                                class="self-stretch text-[#79767C] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-[#232321]" />
+                            <div class="flex flex-col gap-1">
+                                <input type="text" placeholder="Find Delivery Address*" autocomplete="street-address"
+                                    required
+                                    class="self-stretch text-[#79767C] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-[#232321]" />
+                                <p class="text-[#36323B] text-xs">Start typing your street address or zip code for
+                                    suggestion</p>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <input type="tel" placeholder="Phone Number*" autocomplete="tel" required
+                                    class="self-stretch text-[#79767C] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-[#232321]" />
+                                <p class="text-[#36323B] text-xs">E.g. (123) 456-7890</p>
+                            </div>
+                        </fieldset>
+
+                        <!-- Delivery options -->
+                        <fieldset class="flex flex-col gap-4 border-0 p-0">
+                            <legend class="text-[#232321] text-xl md:text-[32px] font-bold mb-2">Delivery Options
+                            </legend>
+                            <label class="flex items-start bg-neutral-50 p-4 gap-2 rounded-xl cursor-pointer">
+                                <input type="radio" name="delivery" value="standard" class="mt-1 accent-[#232321]"
+                                    checked />
+                                <div class="flex flex-1 flex-col gap-2">
+                                    <span class="text-[#232321] text-xl font-bold">Standard Delivery</span>
+                                    <span class="text-[#232321] text-sm font-bold">Enter your address to see when you'll
+                                        get your order</span>
+                                </div>
+                                <span class="text-[#4A69E2] text-base font-bold">$6.00</span>
+                            </label>
+                            <label
+                                class="flex items-start p-4 gap-2 rounded-xl border border-solid border-[#232321] cursor-pointer">
+                                <input type="radio" name="delivery" value="store" class="mt-1 accent-[#232321]" />
+                                <div class="flex flex-1 flex-col gap-2">
+                                    <span class="text-[#232321] text-xl font-bold">Collect in store</span>
+                                    <span class="text-[#232321] text-sm font-bold">Pay now, collect in store</span>
+                                </div>
+                                <span class="text-[#232321] text-base font-bold">Free</span>
+                            </label>
+                        </fieldset>
+
+                        <!-- Agreements -->
+                        <div class="flex flex-col gap-4">
+                            <label class="flex items-start gap-2 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 mt-0.5 accent-[#232321] shrink-0" />
+                                <span class="text-[#232321] text-base font-bold">My billing and delivery information are
+                                    the same</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 accent-[#232321]" />
+                                <span class="text-[#232321] text-base font-bold">I'm 13+ year old</span>
+                            </label>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-[#232321] text-base font-bold">Also want product updates with our
+                                    newsletter?</p>
+                                <label class="flex items-start gap-2 cursor-pointer">
+                                    <input type="checkbox" class="w-5 h-5 mt-0.5 accent-[#232321] shrink-0" />
+                                    <span class="text-[#232321] text-base font-bold">Yes, I'd like to receive emails
+                                        about exclusive sales and more.</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit"
+                            class="flex justify-between items-center self-stretch bg-[#232321] text-white text-sm py-[15px] px-4 rounded-lg">
+                            <span>Review AND PAY</span>
+                            <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8h10M8 3l5 5-5 5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </form>
+                </section>
+
+                <!-- Right: desktop order cards -->
+                <aside class="hidden md:flex flex-col shrink-0 items-start gap-[47px]" aria-label="Order details">
+                    <div class="flex flex-col items-start bg-neutral-50 p-6 gap-6 rounded-3xl">
+                        <h2 class="text-[#232321] text-[32px] font-bold">Order Summary</h2>
+                        <dl class="flex flex-col gap-4">
+                            <div class="flex items-center">
+                                <dt class="text-[#232321] text-xl font-bold mr-[283px]">1 ITEM</dt>
+                                <dd class="text-[#232321] text-xl font-bold">$130.00</dd>
+                            </div>
+                            <div class="flex items-center">
+                                <dt class="text-[#232321] text-xl font-bold mr-[289px]">Delivery</dt>
+                                <dd class="text-[#232321] text-xl font-bold">$6.99</dd>
+                            </div>
+                            <div class="flex items-center">
+                                <dt class="text-[#232321] text-xl font-bold mr-[324px]">Sales Tax</dt>
+                                <dd class="text-[#232321] text-xl font-bold">-</dd>
+                            </div>
+                            <div class="flex items-center">
+                                <dt class="text-[#232321] text-2xl font-bold mr-[265px]">Total</dt>
+                                <dd class="text-[#232321] text-2xl font-bold">$130.00</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <div class="flex flex-col items-start bg-neutral-50 p-6 gap-6 rounded-2xl">
+                        <h2 class="text-[#232321] text-2xl font-bold">Order Details</h2>
+                        <div class="flex items-center gap-6">
+                            <img src="../imgs/9.jpg" class="w-[138px] h-[158px] object-cover rounded-xl"
+                                alt="Dropset Trainer Shoes" />
+                            <div class="flex flex-col gap-4">
+                                <div class="flex flex-col gap-2">
+                                    <h3 class="text-[#232321] text-xl font-bold">DROPSET TRAINER SHOES</h3>
+                                    <p class="text-[#232321] text-base font-bold">Men's Road Running Shoes</p>
+                                    <p class="text-[#232321] text-base font-bold">Enamel Blue/ University White</p>
+                                </div>
+                                <div class="flex items-center gap-[42px]">
+                                    <span class="text-[#232321] text-base font-bold">Size 10</span>
+                                    <span class="text-[#232321] text-base font-bold">Quantity 1</span>
+                                </div>
+                                <span class="text-[#4A69E2] text-xl font-bold">$130.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+        </main>
+
+        <div id="site-footer"></div>
+    </div>
+</body>
+
+</html>
