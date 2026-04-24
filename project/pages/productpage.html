@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adidas 4DFWD X Parley – Kicks</title>
+    <title>Product Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
     <style>
@@ -37,17 +37,19 @@
 
         <!-- ===== HEADER ===== -->
         <div class="pt-6 md:pt-8">
-            <header class="md:hidden flex justify-between items-center bg-neutral-50 p-4 mb-6 mx-4 rounded-xl">
-                <div class="flex shrink-0 items-center gap-3">
-                    <button onclick="openSidebar()" aria-label="Menu"><svg class="w-5 h-5" viewBox="0 0 20 20" fill="none">
+            <header class="md:hidden flex items-center bg-neutral-50 p-4 mb-6 mx-4 rounded-xl">
+                <div class="flex-1 flex items-center">
+                    <button onclick="openSidebar()" aria-label="Menu"><svg class="w-5 h-5" viewBox="0 0 20 20"
+                            fill="none">
                             <path d="M2 5h16M2 10h16M2 15h16" stroke="#232321" stroke-width="1.8"
                                 stroke-linecap="round" />
                         </svg></button>
-                    <a href="../index.html" aria-label="Kicks home"><img src="../imgs/logo.png"
-                            class="w-20 h-5 object-contain invert brightness-0" alt="Kicks" /></a>
                 </div>
-                <div class="flex shrink-0 items-center gap-[9px]">
-                    <a href="../pages/listingpage.html" class="mr-2.5" aria-label="Search"><svg class="w-5 h-5"
+                <a href="../index.html" aria-label="Kicks home" class="flex-1 flex justify-center">
+                    <img src="../imgs/logo.png" class="w-20 h-5 object-contain brightness-0" alt="Kicks" />
+                </a>
+                <div class="flex-1 flex justify-end items-center gap-[9px]">
+                    <a href="../pages/listingpage.html" class="mr-1" aria-label="Search"><svg class="w-5 h-5"
                             viewBox="0 0 24 24" fill="none">
                             <circle cx="11" cy="11" r="7" stroke="#232321" stroke-width="2" />
                             <path d="M20 20l-3-3" stroke="#232321" stroke-width="2" stroke-linecap="round" />
@@ -75,7 +77,7 @@
                         </svg></div>
                 </nav>
                 <a href="../index.html" aria-label="Kicks home"><img src="../imgs/logo.png"
-                        class="w-32 h-8 object-contain invert brightness-0" alt="Kicks" /></a>
+                        class="w-32 h-8 object-contain brightness-0" alt="Kicks" /></a>
                 <div class="flex shrink-0 items-center gap-10">
                     <a href="../pages/listingpage.html" aria-label="Search"><svg class="w-6 h-6" viewBox="0 0 24 24"
                             fill="none">
@@ -103,34 +105,36 @@
 
                 <!-- Mobile: main image + thumbnails -->
                 <div class="md:hidden flex flex-col gap-4">
-                    <img src="../imgs/9.jpg" class="w-full h-[273px] object-cover rounded-2xl"
+                    <img src="../imgs/1.jpg" class="w-full h-[273px] object-cover rounded-2xl"
                         alt="Adidas 4DFWD X Parley Running Shoes" />
-                    <div class="flex items-center gap-2">
-                        <img src="../imgs/10.jpg" class="w-16 h-16 object-cover rounded-xl" alt="Thumbnail 1" />
-                        <img src="../imgs/11.jpg" class="w-16 h-16 object-cover rounded-xl" alt="Thumbnail 2" />
-                        <img src="../imgs/12.jpg" class="w-16 h-16 object-cover rounded-xl" alt="Thumbnail 3" />
-                        <img src="../imgs/13.jpg" class="w-16 h-16 object-cover rounded-xl" alt="Thumbnail 4" />
+                    <div class="grid grid-cols-4 gap-4">
+                        <img src="../imgs/1.jpg" class="w-full aspect-square object-cover rounded-xl"
+                            alt="Thumbnail 1" />
+                        <img src="../imgs/dt2.jpg" class="w-full aspect-square object-cover rounded-xl"
+                            alt="Thumbnail 2" />
+                        <img src="../imgs/dt3.jpg" class="w-full aspect-square object-cover rounded-xl"
+                            alt="Thumbnail 3" />
+                        <img src="../imgs/dt4.jpg" class="w-full aspect-square object-cover rounded-xl"
+                            alt="Thumbnail 4" />
                     </div>
                 </div>
 
-                <!-- Desktop: two image columns -->
-                <div class="hidden md:flex flex-1 flex-col gap-4">
-                    <img src="../imgs/9.jpg" class="w-[429px] h-[510px] object-cover rounded-2xl" alt="Product front" />
-                    <img src="../imgs/10.jpg" class="w-[429px] h-[510px] object-cover rounded-2xl" alt="Product side" />
-                </div>
-                <div class="hidden md:flex flex-1 flex-col gap-4">
-                    <img src="../imgs/11.jpg" class="w-[429px] h-[510px] object-cover rounded-2xl" alt="Product back" />
-                    <img src="../imgs/12.jpg" class="w-[429px] h-[510px] object-cover rounded-2xl"
-                        alt="Product detail" />
+                <!-- Desktop: 2x2 grid -->
+                <div class="hidden md:grid grid-cols-2 gap-4 flex-1">
+                    <img src="../imgs/1.jpg" class="w-full h-[510px] object-cover rounded-2xl" alt="Product front" />
+                    <img src="../imgs/dt2.jpg" class="w-full h-[510px] object-cover rounded-2xl" alt="Product side" />
+                    <img src="../imgs/dt3.jpg" class="w-full h-[510px] object-cover rounded-2xl" alt="Product back" />
+                    <img src="../imgs/dt4.jpg" class="w-full h-[510px] object-cover rounded-2xl" alt="Product detail" />
                 </div>
 
                 <!-- Info panel -->
                 <div class="flex flex-1 flex-col items-start gap-4 md:gap-8 pr-0 md:pr-3.5">
                     <div class="flex flex-col items-start gap-2">
                         <button
-                            class="bg-[#4A69E2] text-white text-xs font-bold py-2 md:py-3 px-4 rounded-lg md:rounded-xl">New
-                            Release</button>
-                        <h1 id="product-title" class="text-[#232321] text-xl md:text-[32px] font-bold max-w-[399px]">
+                            class="bg-[#4A69E2] text-white text-xs font-bold py-2 md:py-3 px-4 rounded-lg md:rounded-xl uppercase">NEW
+                            RELEASE</button>
+                        <h1 id="product-title"
+                            class="text-[#232321] text-xl md:text-[32px] font-bold max-w-[399px] uppercase">
                             ADIDAS 4DFWD X PARLEY RUNNING SHOES
                         </h1>
                         <p class="text-[#4A69E2] text-2xl font-bold">$125.00</p>
@@ -138,25 +142,26 @@
 
                     <!-- Color -->
                     <div class="flex flex-col items-start gap-2">
-                        <span class="text-[#232321] text-base font-bold">Color</span>
+                        <span class="text-[#232321] text-base font-bold uppercase">COLOR</span>
                         <div class="flex items-center gap-4">
-                            <button
-                                class="w-8 md:w-12 h-8 md:h-12 rounded-full border-2 border-[#232321] overflow-hidden"
-                                aria-label="Color 1">
-                                <img src="../imgs/9.jpg" class="w-full h-full object-cover" alt="" />
+                            <!-- Selected: 48x48 + outer ring -->
+                            <button class="relative flex items-center justify-center w-12 h-12 rounded-full"
+                                aria-label="Color Dark Navy" aria-pressed="true">
+                                <span class="absolute inset-0 rounded-full border-2 border-[#232321]"></span>
+                                <span class="w-8 h-8 rounded-full block" style="background-color:#253043"></span>
                             </button>
-                            <button class="w-6 h-6 rounded-full border border-gray-300 overflow-hidden"
-                                aria-label="Color 2">
-                                <img src="../imgs/10.jpg" class="w-full h-full object-cover" alt="" />
-                            </button>
+                            <!-- Unselected: 32x32 -->
+                            <button class="w-8 h-8 rounded-full block"
+                                style="background-color:#707E6E; outline: 1px solid #ccc" aria-label="Color Sage"
+                                aria-pressed="false"></button>
                         </div>
                     </div>
 
                     <!-- Size -->
                     <div class="flex flex-col w-full gap-2">
                         <div class="flex justify-between items-center">
-                            <span class="text-[#232321] text-base font-bold">Size</span>
-                            <a href="#" class="text-[#232321] text-sm">Size chart</a>
+                            <span class="text-[#232321] text-base font-bold uppercase">SIZE</span>
+                            <a href="#" class="text-[#232321] text-sm font-bold uppercase underline">Size Chart</a>
                         </div>
                         <!-- Mobile: equal-width buttons -->
                         <div class="md:hidden flex flex-col gap-2">
@@ -206,8 +211,8 @@
                     <div class="flex flex-col w-full gap-2">
                         <div class="flex items-center gap-2">
                             <button
-                                class="flex flex-1 items-center justify-center bg-[#232321] text-white text-sm py-[15px] rounded-lg">Add
-                                to cart</button>
+                                class="flex flex-1 items-center justify-center bg-[#232321] text-white text-sm py-[15px] rounded-lg uppercase font-bold">ADD
+                                TO CART</button>
                             <button
                                 class="w-12 h-12 flex items-center justify-center border border-[#232321] rounded-lg"
                                 aria-label="Wishlist">
@@ -220,13 +225,13 @@
                             </button>
                         </div>
                         <button
-                            class="flex items-center justify-center bg-[#4A69E2] text-white text-sm py-[15px] rounded-lg w-full">Buy
-                            it now</button>
+                            class="flex items-center justify-center bg-[#4A69E2] text-white text-sm py-[15px] rounded-lg w-full uppercase font-bold">BUY
+                            IT NOW</button>
                     </div>
 
                     <!-- Description -->
                     <div class="flex flex-col items-start gap-2 pr-5">
-                        <h2 class="text-[#232321] text-base font-bold">About the product</h2>
+                        <h2 class="text-[#232321] text-base font-bold uppercase">ABOUT THE PRODUCT</h2>
                         <p class="text-[#232321] text-base">
                             Shadow Navy / Army Green<br /><br />
                             This product is excluded from all promotional discounts and offers.<br /><br />
@@ -259,69 +264,72 @@
                         </button>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
                     <article class="flex flex-col gap-2 md:gap-4">
                         <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
                             <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
-                                <img src="../imgs/13.jpg" class="w-full h-full object-cover" alt="Product" />
+                                <img src="../imgs/1.jpg" class="w-full h-full object-cover"
+                                    alt="Adidas 4DFWD X Parley Running Shoes" />
                                 <span
                                     class="absolute top-0 left-0 bg-[#4A69E2] text-white text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">New</span>
                             </div>
                         </div>
-                        <h3 class="text-[#232321] text-base md:text-2xl font-bold w-[137px] md:w-[299px]">ADIDAS 4DFWD X
-                            PARLEY RUNNING SHOES</h3>
-                        <a href="./productpage.html"
-                            class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
-                            Product - $125</a>
+                        <h3 class="text-[#232321] text-base md:text-2xl font-bold">ADIDAS 4DFWD X PARLEY RUNNING SHOES
+                        </h3>
+                        <a href="./pages/productpage.html"
+                            class="flex items-center justify-center gap-1 w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg whitespace-nowrap">View
+                            Product - <span class="text-[#FFA52F]">$125</span></a>
                     </article>
+
                     <article class="flex flex-col gap-2 md:gap-4">
                         <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
                             <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
-                                <img src="../imgs/14.jpg" class="w-full h-full object-cover" alt="Product" />
+                                <img src="../imgs/2.jpg" class="w-full h-full object-cover"
+                                    alt="Adidas 4DFWD X Parley Running Shoes" />
                                 <span
                                     class="absolute top-0 left-0 bg-[#4A69E2] text-white text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">New</span>
                             </div>
                         </div>
-                        <h3 class="text-[#232321] text-base md:text-2xl font-bold w-[137px] md:w-[299px]">ADIDAS 4DFWD X
-                            PARLEY RUNNING SHOES</h3>
-                        <a href="./productpage.html"
-                            class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
-                            Product - $125</a>
+                        <h3 class="text-[#232321] text-base md:text-2xl font-bold">ADIDAS 4DFWD X PARLEY RUNNING SHOES
+                        </h3>
+                        <a href="./pages/productpage.html"
+                            class="flex items-center justify-center gap-1 w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg whitespace-nowrap">View
+                            Product - <span class="text-[#FFA52F]">$125</span></a>
                     </article>
+
                     <article class="flex flex-col gap-2 md:gap-4">
                         <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
                             <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
-                                <img src="../imgs/15.jpg" class="w-full h-full object-cover" alt="Product" />
+                                <img src="../imgs/3.jpg" class="w-full h-full object-cover"
+                                    alt="Adidas 4DFWD X Parley Running Shoes" />
                                 <span
                                     class="absolute top-0 left-0 bg-[#4A69E2] text-white text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">New</span>
                             </div>
                         </div>
-                        <h3 class="text-[#232321] text-base md:text-2xl font-bold w-[137px] md:w-[299px]">ADIDAS 4DFWD X
-                            PARLEY RUNNING SHOES</h3>
-                        <a href="./productpage.html"
-                            class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
-                            Product - $125</a>
+                        <h3 class="text-[#232321] text-base md:text-2xl font-bold">ADIDAS 4DFWD X PARLEY RUNNING SHOES
+                        </h3>
+                        <a href="./pages/productpage.html"
+                            class="flex items-center justify-center gap-1 w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg whitespace-nowrap">View
+                            Product - <span class="text-[#FFA52F]">$125</span></a>
                     </article>
+
                     <article class="flex flex-col gap-2 md:gap-4">
                         <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
                             <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
-                                <img src="../imgs/16.jpg" class="w-full h-full object-cover" alt="Product" />
+                                <img src="../imgs/4.jpg" class="w-full h-full object-cover"
+                                    alt="Adidas 4DFWD X Parley Running Shoes" />
                                 <span
                                     class="absolute top-0 left-0 bg-[#4A69E2] text-white text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">New</span>
                             </div>
                         </div>
-                        <h3 class="text-[#232321] text-base md:text-2xl font-bold w-[137px] md:w-[299px]">ADIDAS 4DFWD X
-                            PARLEY RUNNING SHOES</h3>
-                        <a href="./productpage.html"
-                            class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
-                            Product - $125</a>
+                        <h3 class="text-[#232321] text-base md:text-2xl font-bold">ADIDAS 4DFWD X PARLEY RUNNING SHOES
+                        </h3>
+                        <a href="./pages/productpage.html"
+                            class="flex items-center justify-center gap-1 w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg whitespace-nowrap">View
+                            Product - <span class="text-[#FFA52F]">$125</span></a>
                     </article>
-                </div>
-                <div class="flex justify-center items-center gap-1">
-                    <div class="bg-[#4A69E2] w-8 h-1 rounded-lg"></div>
-                    <div class="bg-[#232321] w-8 h-1 rounded-lg"></div>
-                    <div class="bg-[#232321] w-8 h-1 rounded-lg"></div>
-                    <div class="bg-[#232321] w-8 h-1 rounded-lg"></div>
+
                 </div>
             </section>
 
@@ -329,44 +337,55 @@
 
         <!-- ===== FOOTER ===== -->
         <footer class="self-stretch mx-4 md:mx-[60px] mb-7">
-                        <!-- Newsletter mobile -->
-            <div class="md:hidden flex flex-col bg-[#4A69E2] pt-8 px-6 rounded-t-[32px] pb-10 gap-6">
-                <div class="flex items-start justify-between gap-4">
-                    <div class="flex flex-col gap-2 flex-1">
-                        <h2 class="text-white font-bold uppercase leading-tight" style="font-size:48px">JOIN OUR KICKSPLUS<br>CLUB &amp; GET 15% OFF</h2>
-                        <p class="text-[#E7E7E3] text-sm font-bold">Sign up for free! Join the community.</p>
-                    </div>
-                    <div class="relative shrink-0">
-                        <img src="../imgs/logo.png" class="w-[100px] object-contain brightness-0 invert" alt="Kicks" />
-                        <div class="absolute -top-1 -right-2 w-4 h-4 rounded-full bg-[#FFA52F] flex items-center justify-center text-[#232321] font-bold text-xs">+</div>
-                    </div>
+            <!-- Newsletter mobile -->
+            <div class="md:hidden flex flex-col bg-[#4A69E2] pt-8 px-6 rounded-t-[32px] pb-16 gap-4">
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-white font-bold uppercase leading-tight" style="font-size:32px">Join our
+                        KicksPlus<br>Club & get 15% off</h2>
+                    <p class="text-[#E7E7E3] text-sm font-bold">Sign up for free! Join the community.</p>
                 </div>
-                <form class="flex flex-col gap-3" onsubmit="return false;">
-                    <input type="email" placeholder="Email address" aria-label="Email address" class="w-full text-white placeholder-[#E7E7E3] bg-transparent text-base py-3 px-4 rounded-lg border border-white focus:outline-none" />
-                    <button type="submit" class="w-full bg-[#232321] text-white text-sm py-3 px-6 rounded-lg font-bold uppercase tracking-wide text-center">Submit</button>
+                <form class="flex items-center gap-2" onsubmit="return false;">
+                    <input type="email" placeholder="Email address" aria-label="Email address"
+                        class="flex-1 text-white placeholder-[#E7E7E3] bg-transparent text-sm py-3 px-3 rounded-lg border border-white focus:outline-none" />
+                    <button type="submit"
+                        class="shrink-0 bg-[#232321] text-white text-xs font-bold py-3 px-4 rounded-lg uppercase tracking-wide">Submit</button>
                 </form>
+                <!-- Logo nhỏ bên trái + dấu + -->
+                <div class="relative inline-block">
+                    <img src="../imgs/logo.png" class="w-[120px] object-contain brightness-0 invert" alt="Kicks" />
+                    <div
+                        class="absolute -top-2 -right-3 w-4 h-4 rounded-full bg-[#FFA52F] flex items-center justify-center text-white font-bold text-xs">
+                        +</div>
+                </div>
             </div>
-            </div>
-                        <!-- Newsletter desktop -->
+            <!-- Newsletter desktop -->
             <div class="hidden md:flex items-center bg-[#4A69E2] rounded-t-[48px] px-[72px] py-[60px] gap-12">
+                <!-- Left: text + form -->
                 <div class="flex flex-col flex-1 gap-5">
-                    <h2 class="text-white font-bold uppercase leading-tight" style="font-size:48px">JOIN OUR KICKSPLUS<br>CLUB &amp; GET 15% OFF</h2>
+                    <h2 class="text-white font-bold uppercase leading-tight" style="font-size:48px">JOIN OUR
+                        KICKSPLUS<br>CLUB & GET 15% OFF</h2>
                     <p class="text-[#E7E7E3] text-base font-bold">Sign up for free! Join the community.</p>
                     <form class="flex items-center gap-2 w-full max-w-md" onsubmit="return false;">
-                        <input type="email" placeholder="Email address" aria-label="Email address" class="flex-1 text-white placeholder-[#E7E7E3] bg-transparent text-base py-3.5 px-4 rounded-lg border border-white focus:outline-none" />
-                        <button type="submit" class="shrink-0 bg-[#232321] text-white text-sm py-[15px] px-6 rounded-lg font-bold uppercase tracking-wide">Submit</button>
+                        <input type="email" placeholder="Email address" aria-label="Email address"
+                            class="flex-1 text-white placeholder-[#E7E7E3] bg-transparent text-base py-3.5 px-4 rounded-lg border border-white focus:outline-none" />
+                        <button type="submit"
+                            class="shrink-0 bg-[#232321] text-white text-sm py-[15px] px-6 rounded-lg font-bold uppercase tracking-wide">Submit</button>
                     </form>
                 </div>
+                <!-- Right: logo -->
                 <div class="flex-1 flex items-center justify-center">
                     <div class="relative inline-block">
-                        <img src="../imgs/logo.png" class="w-[280px] xl:w-[360px] object-contain brightness-0 invert" alt="Kicks" />
-                        <div class="absolute -top-3 -right-3 w-7 h-7 rounded-full bg-[#FFA52F] flex items-center justify-center text-white font-bold text-lg">+</div>
+                        <img src="../imgs/logo.png" class="w-[280px] xl:w-[360px] object-contain brightness-0 invert"
+                            alt="Kicks" />
+                        <div
+                            class="absolute -top-3 -right-3 w-7 h-7 rounded-full bg-[#FFA52F] flex items-center justify-center text-white font-bold text-lg">
+                            +</div>
                     </div>
                 </div>
             </div>
-            </div>
+            <!-- Footer nav -->
             <div
-                class="flex flex-col self-stretch bg-[#232321] pt-6 md:pt-16 rounded-[32px] md:rounded-[48px] -mt-[48px] relative z-10">
+                class="flex flex-col self-stretch bg-[#232321] pt-6 md:pt-16 rounded-[32px] md:rounded-[48px] -mt-[48px] relative z-10 overflow-hidden">
                 <div
                     class="flex flex-col md:flex-row justify-between items-start self-stretch mb-10 md:mb-[97px] mx-4 md:mx-10 gap-6 md:gap-0">
                     <div class="flex flex-col shrink-0 items-start gap-1">
@@ -416,15 +435,34 @@
                         <div class="flex flex-col shrink-0 items-start gap-4">
                             <h4 class="text-[#FFA52F] text-xl md:text-2xl font-bold">Follow us</h4>
                             <div class="flex items-center gap-4 md:gap-6">
-                                <a href="#" aria-label="Facebook"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="#E7E7E3"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-                                <a href="#" aria-label="Instagram"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="#E7E7E3" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#E7E7E3" stroke="none"/></svg></a>
-                                <a href="#" aria-label="Twitter"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="#E7E7E3"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
-                                <a href="#" aria-label="TikTok"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="#E7E7E3"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg></a>
+                                <a href="#" aria-label="Facebook"><svg class="w-6 h-6" viewBox="0 0 24 24"
+                                        fill="#E7E7E3">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                                    </svg></a>
+                                <a href="#" aria-label="Instagram"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"
+                                        stroke="#E7E7E3" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                                        <circle cx="12" cy="12" r="4" />
+                                        <circle cx="17.5" cy="6.5" r="1" fill="#E7E7E3" stroke="none" />
+                                    </svg></a>
+                                <a href="#" aria-label="Twitter"><svg class="w-6 h-6" viewBox="0 0 24 24"
+                                        fill="#E7E7E3">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                                    </svg></a>
+                                <a href="#" aria-label="TikTok"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="#E7E7E3">
+                                        <path
+                                            d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z" />
+                                    </svg></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                                <img src="../imgs/Rectangle 1.jpg" class="self-stretch h-[67px] md:h-52 mx-[3px] md:mx-[29px] rounded-3xl md:rounded-[48px] object-cover" alt="" aria-hidden="true" />
+                <div class="overflow-hidden mx-3 md:mx-[29px] rounded-2xl md:rounded-[48px]" style="height:9.6rem">
+                    <img src="../imgs/logo.png" class="w-full brightness-0 invert object-contain object-top"
+                        style="height:16rem" alt="Kicks" />
+                </div>
+            </div>
         </footer>
         <p class="text-[#232321] text-base text-center mb-[18px]">© All rights reserved | Made with ❤️ by Visiata
             Systems International</p>
@@ -433,15 +471,19 @@
 
     <!-- ===== SIDEBAR MENU ===== -->
     <div id="sidebar-overlay" onclick="closeSidebar()" class="fixed inset-0 bg-black/50 z-40 hidden"></div>
-    <aside id="sidebar" class="fixed top-0 left-0 h-full w-72 bg-[#232321] z-50 flex flex-col p-8 gap-8 -translate-x-full transition-transform duration-300">
+    <aside id="sidebar"
+        class="fixed top-0 left-0 h-full w-72 bg-[#232321] z-50 flex flex-col p-8 gap-8 -translate-x-full transition-transform duration-300">
         <div class="flex justify-between items-center">
             <img src="../imgs/logo.png" class="w-24 h-6 object-contain brightness-0 invert" alt="Kicks" />
             <button onclick="closeSidebar()" aria-label="Close menu">
-                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#E7E7E3" stroke-width="2" stroke-linecap="round"/></svg>
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 6l12 12M18 6L6 18" stroke="#E7E7E3" stroke-width="2" stroke-linecap="round" />
+                </svg>
             </button>
         </div>
         <nav class="flex flex-col gap-6">
-            <a href="../pages/listingpage.html" class="text-[#E7E7E3] text-xl font-bold hover:text-[#FFA52F]">🔥 New Drops</a>
+            <a href="../pages/listingpage.html" class="text-[#E7E7E3] text-xl font-bold hover:text-[#FFA52F]">🔥 New
+                Drops</a>
             <a href="../pages/listingpage.html" class="text-[#E7E7E3] text-xl font-bold hover:text-[#FFA52F]">Men</a>
             <a href="../pages/listingpage.html" class="text-[#E7E7E3] text-xl font-bold hover:text-[#FFA52F]">Women</a>
         </nav>

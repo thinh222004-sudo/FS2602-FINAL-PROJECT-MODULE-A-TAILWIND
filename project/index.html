@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kicks – Do it right</title>
+    <title>Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <style>
@@ -125,33 +125,62 @@
                 class="flex flex-col items-center md:items-start mx-4 md:mx-[60px] mb-4 md:mb-[90px] gap-6">
 
                 <!-- Title: small on mobile, huge on desktop -->
-                <h1 class="text-[#232321] text-6xl md:text-[180px] font-bold leading-none self-stretch">Do it right</h1>
+                <h1 class="font-bold leading-none self-stretch uppercase w-full overflow-hidden text-center"
+                    style="font-size: clamp(2.5rem, calc((100vw - 2rem) / 5.8), 180px); letter-spacing: -0.02em; white-space: nowrap;">
+                    <span class="text-[#232321]">DO IT </span><span class="text-[#4A69E2]">RIGHT</span>
+                </h1>
 
                 <!-- Hero banner -->
-                <div class="relative w-full overflow-hidden rounded-2xl"
-                    style="background: url('./imgs/Rectangle 2.jpg') center/cover no-repeat; min-height: 340px;">
+                <div class="relative w-full overflow-hidden rounded-[64px] h-[382px] md:h-auto md:min-h-[750px]"
+                    style="background: url('./imgs/image14.jpg') center/cover no-repeat;">
                     <!-- Badge -->
-                    <div
-                        class="absolute top-0 left-0 bg-[#232321] text-[#E7E7E3] text-xs md:text-base font-bold p-2 md:p-6 rounded-br-lg md:rounded-br-2xl">
+                    <div class="absolute top-12 left-0 bg-[#232321] text-[#E7E7E3] text-xs font-bold rounded-tl-lg rounded-bl-lg md:rounded-bl-2xl md:rounded-tl-2xl"
+                        style="writing-mode: vertical-rl; transform: scale(-1); padding: 0.75rem 0.5rem;">
                         Nike product of the year
                     </div>
-                    <div class="flex flex-row justify-between items-end p-4 md:p-12 pt-14 md:pt-28 gap-4 md:gap-0">
-                        <div class="flex flex-col items-start gap-2 md:gap-6 mt-[30px] md:mt-[94px]">
+                    <!-- Mobile layout: content at bottom -->
+                    <div
+                        class="md:hidden absolute bottom-0 left-0 right-0 flex flex-row justify-between items-end p-4 pb-6 gap-3">
+                        <div class="flex flex-col items-start gap-3">
+                            <h2 class="text-white text-2xl font-bold leading-none">NIKE AIR MAX</h2>
+                            <p class="text-[#E7E7E3] text-sm font-bold">
+                                Nike introducing the new air max for<br>everyone's comfort
+                            </p>
+                            <a href="./pages/listingpage.html"
+                                class="bg-[#4A69E2] text-white text-sm font-bold py-3 px-6 rounded-lg uppercase tracking-wide">
+                                Shop Now
+                            </a>
+                        </div>
+                        <div class="flex flex-col items-end gap-2 shrink-0">
+                            <img src="./imgs/Rectangle 2.jpg"
+                                class="w-28 h-28 object-cover rounded-[32px] border-4 border-white"
+                                alt="Nike Air Max colorway 1" />
+                            <img src="./imgs/Rectangle 1.jpg"
+                                class="w-28 h-28 object-cover rounded-[32px] border-4 border-white"
+                                alt="Nike Air Max colorway 2" />
+                        </div>
+                    </div>
+                    <!-- Desktop layout -->
+                    <div
+                        class="hidden md:flex absolute bottom-0 left-0 right-0 flex-row justify-between items-end p-12 gap-0">
+                        <div class="flex flex-col items-start gap-6">
                             <div>
-                                <h2 class="text-white text-2xl md:text-[74px] font-bold leading-none">NIKE AIR MAX</h2>
-                                <p class="text-[#E7E7E3] text-sm md:text-2xl font-bold max-w-[424px]">
+                                <h2 class="text-white text-[74px] font-bold leading-none">NIKE AIR MAX</h2>
+                                <p class="text-[#E7E7E3] text-2xl font-bold max-w-[424px]">
                                     Nike introducing the new air max for everyone's comfort
                                 </p>
                             </div>
                             <a href="./pages/listingpage.html"
-                                class="bg-[#4A69E2] text-white text-sm py-[7px] md:py-[15px] px-4 md:px-8 rounded-lg">
+                                class="bg-[#4A69E2] text-white text-sm py-[15px] px-8 rounded-lg">
                                 Shop Now
                             </a>
                         </div>
-                        <div class="flex flex-col items-start gap-2 md:gap-4">
-                            <img src="./imgs/7.jpg" class="w-16 md:w-40 h-16 md:h-40 object-cover rounded-xl"
+                        <div class="flex flex-col items-start gap-4">
+                            <img src="./imgs/Rectangle 2.jpg"
+                                class="w-40 h-40 object-cover rounded-[32px] border-4 border-white"
                                 alt="Nike Air Max colorway 1" />
-                            <img src="./imgs/8.jpg" class="w-16 md:w-40 h-16 md:h-40 object-cover rounded-xl"
+                            <img src="./imgs/Rectangle 1.jpg"
+                                class="w-40 h-40 object-cover rounded-[32px] border-4 border-white"
                                 alt="Nike Air Max colorway 2" />
                         </div>
                     </div>
@@ -164,8 +193,9 @@
 
                 <!-- Header row -->
                 <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-4">
-                    <h2 id="new-drops-title" class="text-[#232321] text-2xl md:text-[74px] font-bold max-w-[576px]">
-                        Don't miss out new drops
+                    <h2 id="new-drops-title"
+                        class="text-[#232321] text-2xl md:text-[74px] font-bold uppercase leading-tight">
+                        DON'T MISS OUT<br>NEW DROPS
                     </h2>
                     <a href="./pages/listingpage.html"
                         class="bg-[#4A69E2] text-white text-sm py-[11px] md:py-[15px] px-4 md:px-8 rounded-lg shrink-0 md:mb-[92px]">
@@ -179,7 +209,7 @@
                     <article class="flex flex-col gap-2 md:gap-4">
                         <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
                             <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
-                                <img src="./imgs/10.jpg" class="w-full h-full object-cover"
+                                <img src="./imgs/1.jpg" class="w-full h-full object-cover"
                                     alt="Adidas 4DFWD X Parley Running Shoes" />
                                 <span
                                     class="absolute top-0 left-0 bg-[#4A69E2] text-white text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">New</span>
@@ -188,31 +218,14 @@
                         <h3 class="text-[#232321] text-base md:text-2xl font-bold">ADIDAS 4DFWD X PARLEY RUNNING SHOES
                         </h3>
                         <a href="./pages/productpage.html"
-                            class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
-                            Product - $125</a>
+                            class="flex items-center justify-center gap-1 w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg whitespace-nowrap">View
+                            Product - <span class="text-[#FFA52F]">$125</span></a>
                     </article>
 
                     <article class="flex flex-col gap-2 md:gap-4">
                         <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
                             <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
-                                <img src="./imgs/11.jpg" class="w-full h-full object-cover"
-                                    alt="Adidas 4DFWD X Parley Running Shoes" />
-                                <span
-                                    class="absolute top-0 left-0 bg-[#FFA52F] text-[#232321] text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">10%
-                                    off</span>
-                            </div>
-                        </div>
-                        <h3 class="text-[#232321] text-base md:text-2xl font-bold">ADIDAS 4DFWD X PARLEY RUNNING SHOES
-                        </h3>
-                        <a href="./pages/productpage.html"
-                            class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
-                            Product - $125</a>
-                    </article>
-
-                    <article class="flex flex-col gap-2 md:gap-4">
-                        <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
-                            <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
-                                <img src="./imgs/12.jpg" class="w-full h-full object-cover"
+                                <img src="./imgs/2.jpg" class="w-full h-full object-cover"
                                     alt="Adidas 4DFWD X Parley Running Shoes" />
                                 <span
                                     class="absolute top-0 left-0 bg-[#4A69E2] text-white text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">New</span>
@@ -221,14 +234,14 @@
                         <h3 class="text-[#232321] text-base md:text-2xl font-bold">ADIDAS 4DFWD X PARLEY RUNNING SHOES
                         </h3>
                         <a href="./pages/productpage.html"
-                            class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
-                            Product - $125</a>
+                            class="flex items-center justify-center gap-1 w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg whitespace-nowrap">View
+                            Product - <span class="text-[#FFA52F]">$125</span></a>
                     </article>
 
                     <article class="flex flex-col gap-2 md:gap-4">
                         <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
                             <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
-                                <img src="./imgs/13.jpg" class="w-full h-full object-cover"
+                                <img src="./imgs/3.jpg" class="w-full h-full object-cover"
                                     alt="Adidas 4DFWD X Parley Running Shoes" />
                                 <span
                                     class="absolute top-0 left-0 bg-[#4A69E2] text-white text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">New</span>
@@ -237,8 +250,24 @@
                         <h3 class="text-[#232321] text-base md:text-2xl font-bold">ADIDAS 4DFWD X PARLEY RUNNING SHOES
                         </h3>
                         <a href="./pages/productpage.html"
-                            class="flex items-center justify-center w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg">View
-                            Product - $125</a>
+                            class="flex items-center justify-center gap-1 w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg whitespace-nowrap">View
+                            Product - <span class="text-[#FFA52F]">$125</span></a>
+                    </article>
+
+                    <article class="flex flex-col gap-2 md:gap-4">
+                        <div class="bg-neutral-50 p-2 rounded-2xl md:rounded-[28px]">
+                            <div class="relative rounded-2xl md:rounded-[28px] overflow-hidden aspect-square">
+                                <img src="./imgs/4.jpg" class="w-full h-full object-cover"
+                                    alt="Adidas 4DFWD X Parley Running Shoes" />
+                                <span
+                                    class="absolute top-0 left-0 bg-[#4A69E2] text-white text-xs font-bold py-1 md:py-3 px-2 md:px-4 rounded-tl-xl md:rounded-tl-3xl rounded-br-xl md:rounded-br-3xl">New</span>
+                            </div>
+                        </div>
+                        <h3 class="text-[#232321] text-base md:text-2xl font-bold">ADIDAS 4DFWD X PARLEY RUNNING SHOES
+                        </h3>
+                        <a href="./pages/productpage.html"
+                            class="flex items-center justify-center gap-1 w-full bg-[#232321] text-white text-xs md:text-sm py-[13px] md:py-[15px] rounded-lg whitespace-nowrap">View
+                            Product - <span class="text-[#FFA52F]">$125</span></a>
                     </article>
 
                 </div>
@@ -268,64 +297,62 @@
                     </div>
                 </div>
 
-                <!-- Mobile: stacked -->
-                <div class="md:hidden flex flex-col gap-0">
-                    <a href="./pages/listingpage.html" class="relative overflow-hidden"
-                        style="background: url('./imgs/Rectangle 5.jpg') center/cover no-repeat; padding-top: 276px;">
-                        <div class="flex justify-between items-start px-4 mb-4">
-                            <h3 class="text-[#232321] text-2xl font-bold bg-white/90 px-2 py-1 rounded w-[101px]">
+                <!-- Mobile: stacked  -->
+                <div class="md:hidden flex flex-col gap-4 px-4">
+                    <a href="./pages/listingpage.html" class="relative overflow-hidden rounded-2xl aspect-[4/3]">
+                        <img src="./imgs/5.jpg" class="w-full h-full object-cover object-center"
+                            alt="Lifestyle Shoes" />
+                        <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                            <h3 class="text-[#232321] text-2xl font-bold bg-white/90 px-2 py-1 rounded">
                                 Lifestyle<br />Shoes</h3>
-                            <svg class="w-8 h-8 mt-6 bg-white rounded-full p-1" viewBox="0 0 24 24" fill="none">
+                            <svg class="w-8 h-8 bg-white rounded-full p-1 shrink-0" viewBox="0 0 24 24" fill="none">
                                 <path d="M5 12h14M12 5l7 7-7 7" stroke="#232321" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
                         </div>
                     </a>
-                    <a href="./pages/listingpage.html" class="flex justify-end items-start bg-[#F6F6F6]">
-                        <div class="flex flex-col shrink-0 items-start relative mt-3.5">
-                            <img src="./imgs/Rectangle 6.jpg" class="w-[255px] h-[284px] object-cover"
-                                alt="Basketball Shoes" />
-                            <h3
-                                class="text-[#232321] text-2xl font-bold w-[121px] absolute bottom-[-33px] left-[-39px]">
+                    <a href="./pages/listingpage.html" class="relative overflow-hidden rounded-2xl aspect-[4/3]">
+                        <img src="./imgs/6.jpg" class="w-full h-full object-cover object-center"
+                            alt="Basketball Shoes" />
+                        <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                            <h3 class="text-[#232321] text-2xl font-bold bg-white/90 px-2 py-1 rounded">
                                 Basketball<br />Shoes</h3>
+                            <svg class="w-8 h-8 bg-white rounded-full p-1 shrink-0" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="#232321" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
                         </div>
-                        <svg class="w-8 h-8 mt-[300px] mb-4 mr-4 bg-white rounded-full p-1" viewBox="0 0 24 24"
-                            fill="none">
-                            <path d="M5 12h14M12 5l7 7-7 7" stroke="#232321" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
                     </a>
                 </div>
 
                 <!-- Desktop: side by side -->
-                <div class="hidden md:flex items-center self-stretch ml-[60px] rounded-tl-[48px]">
+                <div class="hidden md:flex items-stretch self-stretch ml-[60px] overflow-hidden">
                     <a href="./pages/listingpage.html"
-                        class="flex flex-1 flex-col items-start bg-[#ECEEF0] pb-[30px] pl-[105px] rounded-tl-[64px]">
-                        <div class="flex flex-col items-start relative">
-                            <img src="./imgs/Rectangle 5.jpg" class="w-[480px] h-[600px] object-cover"
-                                alt="Lifestyle Shoes" />
-                            <h3 class="text-[#232321] text-4xl font-bold w-[187px] absolute bottom-[30px] left-[-57px]">
-                                Lifestyle<br />Shoes</h3>
+                        class="flex flex-1 flex-col bg-[#ECEEF0] rounded-tl-[64px] relative overflow-hidden"
+                        style="height:680px">
+                        <img src="./imgs/5.jpg" class="w-full h-full object-cover object-center"
+                            alt="Lifestyle Shoes" />
+                        <div class="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+                            <h3 class="text-[#232321] text-4xl font-bold">Lifestyle<br />Shoes</h3>
+                            <svg class="w-12 h-12 shrink-0" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="23" stroke="#232321" stroke-width="2" />
+                                <path d="M16 24h16M24 16l8 8-8 8" stroke="#232321" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </div>
-                        <svg class="w-12 h-12 ml-[477px] mt-4" viewBox="0 0 48 48" fill="none">
-                            <circle cx="24" cy="24" r="23" stroke="#232321" stroke-width="2" />
-                            <path d="M16 24h16M24 16l8 8-8 8" stroke="#232321" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
                     </a>
                     <a href="./pages/listingpage.html"
-                        class="flex flex-1 flex-col items-start bg-[#F6F6F6] pb-[30px] pl-[105px]">
-                        <div class="flex flex-col items-start relative">
-                            <img src="./imgs/Rectangle 6.jpg" class="w-[480px] h-[600px] object-cover"
-                                alt="Basketball Shoes" />
-                            <h3 class="text-[#232321] text-4xl font-bold w-[231px] absolute bottom-[30px] left-[-57px]">
-                                Basketball<br />Shoes</h3>
+                        class="flex flex-1 flex-col bg-[#F6F6F6] relative overflow-hidden" style="height:680px">
+                        <img src="./imgs/6.jpg" class="w-full h-full object-cover object-center"
+                            alt="Basketball Shoes" />
+                        <div class="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+                            <h3 class="text-[#232321] text-4xl font-bold">Basketball<br />Shoes</h3>
+                            <svg class="w-12 h-12 shrink-0" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="23" stroke="#232321" stroke-width="2" />
+                                <path d="M16 24h16M24 16l8 8-8 8" stroke="#232321" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </div>
-                        <svg class="w-12 h-12 ml-[477px] mt-4" viewBox="0 0 48 48" fill="none">
-                            <circle cx="24" cy="24" r="23" stroke="#232321" stroke-width="2" />
-                            <path d="M16 24h16M24 16l8 8-8 8" stroke="#232321" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
                     </a>
                 </div>
             </section>
@@ -349,14 +376,14 @@
                                 <h3 class="text-[#232321] text-xl font-bold">Good Quality</h3>
                                 <p class="text-[#232321] text-sm">I highly recommend shopping from kicks</p>
                             </div>
-                            <img src="./imgs/image 14.jpg" class="w-12 h-12 rounded-full object-cover" alt="Reviewer" />
+                            <img src="./imgs/ava1.jpg" class="w-12 h-12 rounded-full object-cover" alt="Reviewer" />
                         </div>
                         <div class="flex items-center gap-1">
-                            <span class="text-[#FFA52F]">★★★★★</span>
+                            <span class="text-[#FFA52F]">⭐⭐⭐⭐⭐</span>
                             <span class="text-[#232321] text-sm font-bold">5.0</span>
                         </div>
                     </div>
-                    <img src="./imgs/14.jpg" class="self-stretch h-[229px] object-cover" alt="Review product" />
+                    <img src="./imgs/fb1.jpg" class="self-stretch h-[229px] object-cover" alt="Review product" />
                 </div>
 
                 <!-- Desktop: 3 cards -->
@@ -369,15 +396,15 @@
                                     <p class="text-[#232321] text-base w-[259px]">I highly recommend shopping from kicks
                                     </p>
                                 </div>
-                                <img src="./imgs/image 14.jpg" class="w-16 h-16 rounded-full object-cover"
-                                    alt="Reviewer" />
+                                <img src="./imgs/ava1.jpg" class="w-16 h-16 rounded-full object-cover" alt="Reviewer" />
                             </div>
                             <div class="flex items-center gap-1">
-                                <span class="text-[#FFA52F] text-xl">★★★★★</span>
+                                <span class="text-[#FFA52F] text-xl">⭐⭐⭐⭐⭐</span>
                                 <span class="text-[#232321] text-base font-bold">5.0</span>
                             </div>
                         </div>
-                        <img src="./imgs/14.jpg" class="w-full h-[325px] object-cover" alt="Review product" />
+                        <img src="./imgs/fb1.jpg" class="w-full h-[325px] rounded-b-[32px] object-cover"
+                            alt="Review product" />
                     </article>
                     <article class="flex flex-1 flex-col">
                         <div class="bg-neutral-50 p-8 flex flex-col gap-2 rounded-tl-[32px] rounded-tr-[32px]">
@@ -387,15 +414,15 @@
                                     <p class="text-[#232321] text-base w-[259px]">I highly recommend shopping from kicks
                                     </p>
                                 </div>
-                                <img src="./imgs/image 14.jpg" class="w-16 h-16 rounded-full object-cover"
-                                    alt="Reviewer" />
+                                <img src="./imgs/ava2.jpg" class="w-16 h-16 rounded-full object-cover" alt="Reviewer" />
                             </div>
                             <div class="flex items-center gap-1">
-                                <span class="text-[#FFA52F] text-xl">★★★★★</span>
+                                <span class="text-[#FFA52F] text-xl">⭐⭐⭐⭐⭐</span>
                                 <span class="text-[#232321] text-base font-bold">5.0</span>
                             </div>
                         </div>
-                        <img src="./imgs/15.jpg" class="w-full h-[325px] object-cover" alt="Review product" />
+                        <img src="./imgs/fb2.jpg" class="w-full h-[325px] rounded-b-[32px] object-cover"
+                            alt="Review product" />
                     </article>
                     <article class="flex flex-1 flex-col">
                         <div class="bg-neutral-50 p-8 flex flex-col gap-2 rounded-tl-[32px] rounded-tr-[32px]">
@@ -405,15 +432,15 @@
                                     <p class="text-[#232321] text-base w-[259px]">I highly recommend shopping from kicks
                                     </p>
                                 </div>
-                                <img src="./imgs/image 14.jpg" class="w-16 h-16 rounded-full object-cover"
-                                    alt="Reviewer" />
+                                <img src="./imgs/ava3.jpg" class="w-16 h-16 rounded-full object-cover" alt="Reviewer" />
                             </div>
                             <div class="flex items-center gap-1">
-                                <span class="text-[#FFA52F] text-xl">★★★★★</span>
+                                <span class="text-[#FFA52F] text-xl">⭐⭐⭐⭐⭐</span>
                                 <span class="text-[#232321] text-base font-bold">5.0</span>
                             </div>
                         </div>
-                        <img src="./imgs/16.jpg" class="w-full h-[325px] object-cover" alt="Review product" />
+                        <img src="./imgs/fb3.jpg" class="w-full h-[325px] rounded-b-[32px] object-cover"
+                            alt="Review product" />
                     </article>
                 </div>
             </section>
@@ -423,27 +450,25 @@
         <!-- ===== FOOTER ===== -->
         <footer class="self-stretch mx-4 md:mx-[60px] mb-7">
             <!-- Newsletter mobile -->
-            <div class="md:hidden flex flex-col bg-[#4A69E2] pt-8 px-6 rounded-t-[32px] pb-10 gap-6">
-                <!-- Top row: text left, logo right -->
-                <div class="flex items-start justify-between gap-4">
-                    <div class="flex flex-col gap-2 flex-1">
-                        <h2 class="text-white font-bold uppercase leading-tight" style="font-size:48px">JOIN OUR
-                            KICKSPLUS<br>CLUB & GET 15% OFF</h2>
-                        <p class="text-[#E7E7E3] text-sm font-bold">Sign up for free! Join the community.</p>
-                    </div>
-                    <div class="relative shrink-0">
-                        <img src="./imgs/logo.png" class="w-[100px] object-contain brightness-0 invert" alt="Kicks" />
-                        <div
-                            class="absolute -top-1 -right-2 w-4 h-4 rounded-full bg-[#FFA52F] flex items-center justify-center text-[#232321] font-bold text-xs">
-                            +</div>
-                    </div>
+            <div class="md:hidden flex flex-col bg-[#4A69E2] pt-8 px-6 rounded-t-[32px] pb-16 gap-4">
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-white font-bold uppercase leading-tight" style="font-size:32px">Join our
+                        KicksPlus<br>Club & get 15% off</h2>
+                    <p class="text-[#E7E7E3] text-sm font-bold">Sign up for free! Join the community.</p>
                 </div>
-                <form class="flex flex-col gap-3" onsubmit="return false;">
+                <form class="flex items-center gap-2" onsubmit="return false;">
                     <input type="email" placeholder="Email address" aria-label="Email address"
-                        class="w-full text-white placeholder-[#E7E7E3] bg-transparent text-base py-3 px-4 rounded-lg border border-white focus:outline-none" />
+                        class="flex-1 text-white placeholder-[#E7E7E3] bg-transparent text-sm py-3 px-3 rounded-lg border border-white focus:outline-none" />
                     <button type="submit"
-                        class="w-full bg-[#232321] text-white text-sm py-3 px-6 rounded-lg font-bold uppercase tracking-wide text-center">Submit</button>
+                        class="shrink-0 bg-[#232321] text-white text-xs font-bold py-3 px-4 rounded-lg uppercase tracking-wide">Submit</button>
                 </form>
+                <!-- Logo nhỏ bên trái + dấu + -->
+                <div class="relative inline-block">
+                    <img src="./imgs/logo.png" class="w-[120px] object-contain brightness-0 invert" alt="Kicks" />
+                    <div
+                        class="absolute -top-2 -right-3 w-4 h-4 rounded-full bg-[#FFA52F] flex items-center justify-center text-white font-bold text-xs">
+                        +</div>
+                </div>
             </div>
             <!-- Newsletter desktop -->
             <div class="hidden md:flex items-center bg-[#4A69E2] rounded-t-[48px] px-[72px] py-[60px] gap-12">
@@ -472,7 +497,7 @@
             </div>
             <!-- Footer nav -->
             <div
-                class="flex flex-col self-stretch bg-[#232321] pt-6 md:pt-16 rounded-[32px] md:rounded-[48px] -mt-[48px] relative z-10">
+                class="flex flex-col self-stretch bg-[#232321] pt-6 md:pt-16 rounded-[32px] md:rounded-[48px] -mt-[48px] relative z-10 overflow-hidden">
                 <div
                     class="flex flex-col md:flex-row justify-between items-start self-stretch mb-10 md:mb-[97px] mx-4 md:mx-10 gap-6 md:gap-0">
                     <div class="flex flex-col shrink-0 items-start gap-1">
@@ -545,9 +570,10 @@
                         </div>
                     </div>
                 </div>
-                <img src="./imgs/Rectangle 1.jpg"
-                    class="self-stretch h-[67px] md:h-52 mx-[3px] md:mx-[29px] rounded-3xl md:rounded-[48px] object-cover"
-                    alt="" aria-hidden="true" />
+                <div class="overflow-hidden mx-3 md:mx-[29px] rounded-2xl md:rounded-[48px]" style="height:9.6rem">
+                    <img src="./imgs/logo.png" class="w-full brightness-0 invert object-contain object-top"
+                        style="height:16rem" alt="Kicks" />
+                </div>
         </footer>
         <p class="text-[#232321] text-base text-center mb-[18px]">© All rights reserved | Made with ❤️ by Visiata
             Systems International</p>
@@ -566,7 +592,7 @@
             </button>
         </div>
         <nav class="flex flex-col gap-6">
-            <a href="./pages/listingpage.html" class="text-[#E7E7E3] text-xl font-bold hover:text-[#FFA52F]">🔥 New
+            <a href="./pages/listingpage.html" class="text-[#E7E7E3] text-xl font-bold hover:text-[#FFA52F]">?? New
                 Drops</a>
             <a href="./pages/listingpage.html" class="text-[#E7E7E3] text-xl font-bold hover:text-[#FFA52F]">Men</a>
             <a href="./pages/listingpage.html" class="text-[#E7E7E3] text-xl font-bold hover:text-[#FFA52F]">Women</a>
