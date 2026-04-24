@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -16,13 +16,84 @@
             text-decoration: none;
         }
     </style>
-    <script src="../js/components.js" defer></script>
+    <!-- ===== RESPONSIVE STYLES ===== -->
+    <style>
+        @media (max-width: 767px) {
+            .order-img {
+                height: 179px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .order-img {
+                height: 158px;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-white">
     <div class="flex flex-col bg-[#E7E7E3]">
 
-        <div class="pt-6 md:pt-8" id="site-header"></div>
+        <!-- ===== HEADER ===== -->
+        <div class="pt-6 md:pt-8">
+            <header class="md:hidden flex justify-between items-center bg-neutral-50 p-4 mb-6 mx-4 rounded-xl">
+                <div class="flex shrink-0 items-center gap-3">
+                    <button onclick="openSidebar()" aria-label="Menu"><svg class="w-5 h-5" viewBox="0 0 20 20" fill="none">
+                            <path d="M2 5h16M2 10h16M2 15h16" stroke="#232321" stroke-width="1.8"
+                                stroke-linecap="round" />
+                        </svg></button>
+                    <a href="../index.html" aria-label="Kicks home"><img src="../imgs/logo.png"
+                            class="w-20 h-5 object-contain invert brightness-0" alt="Kicks" /></a>
+                </div>
+                <div class="flex shrink-0 items-center gap-[9px]">
+                    <a href="../pages/listingpage.html" class="mr-2.5" aria-label="Search"><svg class="w-5 h-5"
+                            viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="7" stroke="#232321" stroke-width="2" />
+                            <path d="M20 20l-3-3" stroke="#232321" stroke-width="2" stroke-linecap="round" />
+                        </svg></a>
+                    <a href="../pages/cart.html"
+                        class="bg-[#FFA52F] text-[#232321] text-xs font-bold w-6 h-6 flex items-center justify-center rounded-full"
+                        aria-label="Cart (0 items)">0</a>
+                </div>
+            </header>
+            <header class="hidden md:flex justify-between items-center bg-neutral-50 p-8 mb-6 mx-[60px] rounded-[32px]">
+                <nav class="flex shrink-0 items-center" aria-label="Main navigation">
+                    <a href="../pages/listingpage.html" class="text-[#232321] text-base font-bold mr-[42px]">🔥 New
+                        Drops</a>
+                    <div class="flex shrink-0 items-center mr-10 gap-[5px]"><a href="../pages/listingpage.html"
+                            class="text-[#232321] text-base font-bold">Men</a><svg class="w-3 h-3" viewBox="0 0 12 12"
+                            fill="none">
+                            <path d="M2 4l4 4 4-4" stroke="#232321" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></div>
+                    <div class="flex shrink-0 items-center gap-1"><a href="../pages/listingpage.html"
+                            class="text-[#232321] text-base font-bold">Women</a><svg class="w-3 h-3" viewBox="0 0 12 12"
+                            fill="none">
+                            <path d="M2 4l4 4 4-4" stroke="#232321" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></div>
+                </nav>
+                <a href="../index.html" aria-label="Kicks home"><img src="../imgs/logo.png"
+                        class="w-32 h-8 object-contain invert brightness-0" alt="Kicks" /></a>
+                <div class="flex shrink-0 items-center gap-10">
+                    <a href="../pages/listingpage.html" aria-label="Search"><svg class="w-6 h-6" viewBox="0 0 24 24"
+                            fill="none">
+                            <circle cx="11" cy="11" r="7" stroke="#232321" stroke-width="2" />
+                            <path d="M20 20l-3-3" stroke="#232321" stroke-width="2" stroke-linecap="round" />
+                        </svg></a>
+                    <a href="../pages/login.html" aria-label="Account"><svg class="w-6 h-6" viewBox="0 0 28 28"
+                            fill="none">
+                            <circle cx="14" cy="10" r="5" stroke="#232321" stroke-width="2" />
+                            <path d="M4 26c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#232321" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg></a>
+                    <a href="../pages/cart.html"
+                        class="bg-[#FFA52F] text-[#232321] text-sm font-bold w-8 h-8 flex items-center justify-center rounded-full ml-[-10px]"
+                        aria-label="Cart (0 items)">0</a>
+                </div>
+            </header>
+        </div>
 
         <main class="flex flex-col items-center px-4 md:px-0 gap-6 mb-10 md:mb-12">
 
@@ -214,8 +285,137 @@
 
         </main>
 
-        <div id="site-footer"></div>
+        <!-- ===== FOOTER ===== -->
+        <footer class="self-stretch mx-4 md:mx-[60px] mb-7">
+                        <!-- Newsletter mobile -->
+            <div class="md:hidden flex flex-col bg-[#4A69E2] pt-8 px-6 rounded-t-[32px] pb-10 gap-6">
+                <div class="flex items-start justify-between gap-4">
+                    <div class="flex flex-col gap-2 flex-1">
+                        <h2 class="text-white font-bold uppercase leading-tight" style="font-size:48px">JOIN OUR KICKSPLUS<br>CLUB &amp; GET 15% OFF</h2>
+                        <p class="text-[#E7E7E3] text-sm font-bold">Sign up for free! Join the community.</p>
+                    </div>
+                    <div class="relative shrink-0">
+                        <img src="../imgs/logo.png" class="w-[100px] object-contain brightness-0 invert" alt="Kicks" />
+                        <div class="absolute -top-1 -right-2 w-4 h-4 rounded-full bg-[#FFA52F] flex items-center justify-center text-[#232321] font-bold text-xs">+</div>
+                    </div>
+                </div>
+                <form class="flex flex-col gap-3" onsubmit="return false;">
+                    <input type="email" placeholder="Email address" aria-label="Email address" class="w-full text-white placeholder-[#E7E7E3] bg-transparent text-base py-3 px-4 rounded-lg border border-white focus:outline-none" />
+                    <button type="submit" class="w-full bg-[#232321] text-white text-sm py-3 px-6 rounded-lg font-bold uppercase tracking-wide text-center">Submit</button>
+                </form>
+            </div>
+            </div>
+                        <!-- Newsletter desktop -->
+            <div class="hidden md:flex items-center bg-[#4A69E2] rounded-t-[48px] px-[72px] py-[60px] gap-12">
+                <div class="flex flex-col flex-1 gap-5">
+                    <h2 class="text-white font-bold uppercase leading-tight" style="font-size:48px">JOIN OUR KICKSPLUS<br>CLUB &amp; GET 15% OFF</h2>
+                    <p class="text-[#E7E7E3] text-base font-bold">Sign up for free! Join the community.</p>
+                    <form class="flex items-center gap-2 w-full max-w-md" onsubmit="return false;">
+                        <input type="email" placeholder="Email address" aria-label="Email address" class="flex-1 text-white placeholder-[#E7E7E3] bg-transparent text-base py-3.5 px-4 rounded-lg border border-white focus:outline-none" />
+                        <button type="submit" class="shrink-0 bg-[#232321] text-white text-sm py-[15px] px-6 rounded-lg font-bold uppercase tracking-wide">Submit</button>
+                    </form>
+                </div>
+                <div class="flex-1 flex items-center justify-center">
+                    <div class="relative inline-block">
+                        <img src="../imgs/logo.png" class="w-[280px] xl:w-[360px] object-contain brightness-0 invert" alt="Kicks" />
+                        <div class="absolute -top-3 -right-3 w-7 h-7 rounded-full bg-[#FFA52F] flex items-center justify-center text-white font-bold text-lg">+</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div
+                class="flex flex-col self-stretch bg-[#232321] pt-6 md:pt-16 rounded-[32px] md:rounded-[48px] -mt-[48px] relative z-10">
+                <div
+                    class="flex flex-col md:flex-row justify-between items-start self-stretch mb-10 md:mb-[97px] mx-4 md:mx-10 gap-6 md:gap-0">
+                    <div class="flex flex-col shrink-0 items-start gap-1">
+                        <h3 class="text-[#FFA52F] text-2xl md:text-4xl font-bold">About us</h3>
+                        <p class="text-[#E7E7E3] text-base md:text-xl font-bold max-w-[443px]">We are the biggest
+                            hyperstore in the universe. We got you all cover with our exclusive collections and latest
+                            drops.</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row shrink-0 items-start gap-6 md:gap-0">
+                        <div class="flex flex-col shrink-0 items-start md:mr-32 gap-4">
+                            <h4 class="text-[#FFA52F] text-xl md:text-2xl font-bold">Categories</h4>
+                            <ul class="flex flex-col items-start gap-2">
+                                <li><a href="../pages/listingpage.html"
+                                        class="text-[#E7E7E3] text-base md:text-xl font-bold hover:text-white">Runners</a>
+                                </li>
+                                <li><a href="../pages/listingpage.html"
+                                        class="text-[#E7E7E3] text-base md:text-xl font-bold hover:text-white">Sneakers</a>
+                                </li>
+                                <li><a href="../pages/listingpage.html"
+                                        class="text-[#E7E7E3] text-base md:text-xl font-bold hover:text-white">Basketball</a>
+                                </li>
+                                <li><a href="../pages/listingpage.html"
+                                        class="text-[#E7E7E3] text-base md:text-xl font-bold hover:text-white">Outdoor</a>
+                                </li>
+                                <li><a href="../pages/listingpage.html"
+                                        class="text-[#E7E7E3] text-base md:text-xl font-bold hover:text-white">Golf</a>
+                                </li>
+                                <li><a href="../pages/listingpage.html"
+                                        class="text-[#E7E7E3] text-base md:text-xl font-bold hover:text-white">Hiking</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col shrink-0 items-start md:mr-32 gap-4">
+                            <h4 class="text-[#FFA52F] text-xl md:text-2xl font-bold">Company</h4>
+                            <ul class="flex flex-col items-start gap-2">
+                                <li><a href="#"
+                                        class="text-[#E7E7E3] text-base md:text-xl font-bold hover:text-white">About</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-[#E7E7E3] text-base md:text-xl font-bold hover:text-white">Contact</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-[#E7E7E3] text-base md:text-xl font-bold hover:text-white">Blogs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col shrink-0 items-start gap-4">
+                            <h4 class="text-[#FFA52F] text-xl md:text-2xl font-bold">Follow us</h4>
+                            <div class="flex items-center gap-4 md:gap-6">
+                                <a href="#" aria-label="Facebook"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="#E7E7E3"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                                <a href="#" aria-label="Instagram"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="#E7E7E3" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#E7E7E3" stroke="none"/></svg></a>
+                                <a href="#" aria-label="Twitter"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="#E7E7E3"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                                <a href="#" aria-label="TikTok"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="#E7E7E3"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <img src="../imgs/Rectangle 1.jpg" class="self-stretch h-[67px] md:h-52 mx-[3px] md:mx-[29px] rounded-3xl md:rounded-[48px] object-cover" alt="" aria-hidden="true" />
+        </footer>
+        <p class="text-[#232321] text-base text-center mb-[18px]">© All rights reserved | Made with ❤️ by Visiata
+            Systems International</p>
+
     </div>
+
+    <!-- ===== SIDEBAR MENU ===== -->
+    <div id="sidebar-overlay" onclick="closeSidebar()" class="fixed inset-0 bg-black/50 z-40 hidden"></div>
+    <aside id="sidebar" class="fixed top-0 left-0 h-full w-72 bg-[#232321] z-50 flex flex-col p-8 gap-8 -translate-x-full transition-transform duration-300">
+        <div class="flex justify-between items-center">
+            <img src="../imgs/logo.png" class="w-24 h-6 object-contain brightness-0 invert" alt="Kicks" />
+            <button onclick="closeSidebar()" aria-label="Close menu">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#E7E7E3" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-6">
+            <a href="../pages/listingpage.html" class="text-[#E7E7E3] text-xl font-bold hover:text-[#FFA52F]">🔥 New Drops</a>
+            <a href="../pages/listingpage.html" class="text-[#E7E7E3] text-xl font-bold hover:text-[#FFA52F]">Men</a>
+            <a href="../pages/listingpage.html" class="text-[#E7E7E3] text-xl font-bold hover:text-[#FFA52F]">Women</a>
+        </nav>
+    </aside>
+    <script>
+        function openSidebar() {
+            document.getElementById('sidebar').classList.remove('-translate-x-full');
+            document.getElementById('sidebar-overlay').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeSidebar() {
+            document.getElementById('sidebar').classList.add('-translate-x-full');
+            document.getElementById('sidebar-overlay').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+    </script>
 </body>
 
 </html>
