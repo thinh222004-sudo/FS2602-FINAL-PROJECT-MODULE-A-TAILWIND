@@ -149,7 +149,10 @@
                         </dl>
                     </div>
 
-                    <p class="text-[#232321] text-base font-bold">Login and Checkout faster</p>
+                    <p class="text-[#232321] text-base">
+                        <a href="../pages/login.html" class="font-bold underline">Login</a> and
+                        <a href="../pages/checkout.html" class="font-bold underline">Checkout</a> faster
+                    </p>
 
                     <form class="flex flex-col self-stretch gap-5 md:gap-8" onsubmit="return false;" novalidate>
                         <div class="flex flex-col gap-2 rounded-2xl">
@@ -159,15 +162,18 @@
                                 you informed about your delivery.</p>
                         </div>
                         <input type="email" placeholder="Email" autocomplete="email" required
-                            class="self-stretch text-[#79767C] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-[#232321]" />
+                            class="w-1/2 text-[#79767C] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-[#232321]" />
 
                         <fieldset class="flex flex-col gap-4 border-0 p-0">
                             <legend class="text-[#232321] text-xl md:text-[32px] font-bold mb-2">Shipping Address
                             </legend>
-                            <input type="text" placeholder="First Name*" autocomplete="given-name" required
-                                class="self-stretch text-[#79767C] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-[#232321]" />
-                            <input type="text" placeholder="Last Name*" autocomplete="family-name" required
-                                class="self-stretch text-[#79767C] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-[#232321]" />
+                            <!-- First + Last name cùng hàng, bằng nhau -->
+                            <div class="flex gap-4">
+                                <input type="text" placeholder="First Name*" autocomplete="given-name" required
+                                    class="flex-1 text-[#79767C] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-[#232321]" />
+                                <input type="text" placeholder="Last Name*" autocomplete="family-name" required
+                                    class="flex-1 text-[#79767C] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-[#232321]" />
+                            </div>
                             <div class="flex flex-col gap-1">
                                 <input type="text" placeholder="Find Delivery Address*" autocomplete="street-address"
                                     required
@@ -177,7 +183,7 @@
                             </div>
                             <div class="flex flex-col gap-1">
                                 <input type="tel" placeholder="Phone Number*" autocomplete="tel" required
-                                    class="self-stretch text-[#79767C] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-[#232321]" />
+                                    class="w-1/2 text-[#79767C] bg-transparent text-base py-3.5 px-4 rounded-lg border border-solid border-[#232321]" />
                                 <p class="text-[#36323B] text-xs">E.g. (123) 456-7890</p>
                             </div>
                         </fieldset>

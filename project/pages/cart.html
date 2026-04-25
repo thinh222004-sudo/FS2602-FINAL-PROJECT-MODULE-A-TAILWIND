@@ -128,30 +128,100 @@
                 <!-- Your Bag -->
                 <section class="flex flex-1 flex-col bg-neutral-50 p-4 md:p-6 gap-2 md:gap-12 rounded-2xl"
                     aria-labelledby="bag-title">
-                    <div class="flex flex-col items-start pb-[1px]">
-                        <h2 id="bag-title" class="text-[#232321] text-xl md:text-[32px] font-bold">Your Bag</h2>
+                    <div class="flex flex-col items-start">
+                        <h2 id="bag-title" class="text-[#232321] text-xl md:text-[32px] font-bold">Your Bag</h2> <br>
+                        <p class="text-[#232321] text-sm md:text-base">Items in your bag not reserved - check out now to
+                            make them yours.</p>
                     </div>
-                    <p class="text-[#232321] text-sm md:text-base">Items in your bag not reserved - check out now to
-                        make them yours.</p>
-                    <div class="flex items-center gap-[18px] md:gap-[39px]">
-                        <span class="text-[#232321] text-base md:text-xl font-bold">Size 10</span>
-                        <span class="text-[#232321] text-base md:text-xl font-bold">Quantity 1</span>
-                    </div>
-                    <span class="text-[#4A69E2] text-xl md:text-2xl font-bold">$130.00</span>
-                    <div class="flex items-center gap-6">
-                        <button aria-label="Wishlist" class="w-6 h-6 md:w-8 md:h-8">
-                            <svg viewBox="0 0 32 32" fill="none">
-                                <path
-                                    d="M27.79 6.15a7.33 7.33 0 00-10.37 0L16 7.57l-1.42-1.42a7.33 7.33 0 00-10.37 10.37l1.42 1.42L16 28.3l10.37-10.37 1.42-1.42a7.33 7.33 0 000-10.37z"
-                                    stroke="#232321" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <button aria-label="Remove" class="w-6 h-6 md:w-8 md:h-8">
-                            <svg viewBox="0 0 32 32" fill="none">
-                                <path d="M8 8l16 16M24 8L8 24" stroke="#232321" stroke-width="2"
-                                    stroke-linecap="round" />
-                            </svg>
-                        </button>
+                    <!-- Cart item -->
+                    <div class="flex items-start gap-[25px]  p-4 rounded-2xl">
+                        <img src="../imgs/1.jpg" style="width:208px; height:225px; flex-shrink:0;"
+                            class="object-cover rounded-xl" alt="Dropset Trainer Shoes" />
+                        <!-- Details + giá -->
+                        <div class="flex flex-1 items-start" style="gap:80px;">
+                            <!-- Details -->
+                            <div class="flex flex-col gap-2 flex-1">
+                                <h3 class="text-[#232321] text-base font-bold uppercase">DROPSET TRAINER SHOES</h3>
+                                <p class="text-[#232321] text-sm">Men's Road Running Shoes</p>
+                                <p class="text-[#232321] text-sm">Enamel Blue/ University White</p>
+                                <!-- Size + Quantity dropdowns -->
+                                <div class="flex items-center gap-6 mt-1">
+                                    <!-- Size -->
+                                    <div class="relative" id="size-dropdown-wrapper">
+                                        <button onclick="toggleSizeDropdown()" class="flex items-center gap-1">
+                                            <span class="text-[#232321] text-sm font-medium" id="selected-size">Size
+                                                10</span>
+                                            <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none">
+                                                <path d="M4 6l4 4 4-4" stroke="#232321" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <div id="size-dropdown"
+                                            class="hidden absolute left-0 top-8 bg-white border border-[#232321] rounded-lg shadow-lg z-20 p-2 grid grid-cols-3 gap-1 w-36">
+                                            <button onclick="selectSize(7)"
+                                                class="text-[#232321] text-sm py-1 px-2 rounded hover:bg-[#232321] hover:text-white">7</button>
+                                            <button onclick="selectSize(8)"
+                                                class="text-[#232321] text-sm py-1 px-2 rounded hover:bg-[#232321] hover:text-white">8</button>
+                                            <button onclick="selectSize(9)"
+                                                class="text-[#232321] text-sm py-1 px-2 rounded hover:bg-[#232321] hover:text-white">9</button>
+                                            <button onclick="selectSize(10)"
+                                                class="bg-[#232321] text-white text-sm py-1 px-2 rounded">10</button>
+                                            <button onclick="selectSize(11)"
+                                                class="text-[#232321] text-sm py-1 px-2 rounded hover:bg-[#232321] hover:text-white">11</button>
+                                            <button onclick="selectSize(12)"
+                                                class="text-[#232321] text-sm py-1 px-2 rounded hover:bg-[#232321] hover:text-white">12</button>
+                                        </div>
+                                    </div>
+                                    <!-- Quantity -->
+                                    <div class="relative" id="qty-dropdown-wrapper">
+                                        <button onclick="toggleQtyDropdown()" class="flex items-center gap-1">
+                                            <span class="text-[#232321] text-sm font-medium" id="selected-qty">Quantity
+                                                1</span>
+                                            <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none">
+                                                <path d="M4 6l4 4 4-4" stroke="#232321" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <div id="qty-dropdown"
+                                            class="hidden absolute left-0 top-8 bg-white border border-[#232321] rounded-lg shadow-lg z-20 p-2 flex flex-col gap-1 w-28">
+                                            <button onclick="selectQty(1)"
+                                                class="bg-[#232321] text-white text-sm py-1 px-2 rounded text-left">1</button>
+                                            <button onclick="selectQty(2)"
+                                                class="text-[#232321] text-sm py-1 px-2 rounded hover:bg-[#232321] hover:text-white text-left">2</button>
+                                            <button onclick="selectQty(3)"
+                                                class="text-[#232321] text-sm py-1 px-2 rounded hover:bg-[#232321] hover:text-white text-left">3</button>
+                                            <button onclick="selectQty(4)"
+                                                class="text-[#232321] text-sm py-1 px-2 rounded hover:bg-[#232321] hover:text-white text-left">4</button>
+                                            <button onclick="selectQty(5)"
+                                                class="text-[#232321] text-sm py-1 px-2 rounded hover:bg-[#232321] hover:text-white text-left">5</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Actions -->
+                                <div class="flex items-center gap-4 mt-1">
+                                    <button aria-label="Wishlist">
+                                        <svg class="w-6 h-6" viewBox="0 0 32 32" fill="none">
+                                            <path
+                                                d="M27.79 6.15a7.33 7.33 0 00-10.37 0L16 7.57l-1.42-1.42a7.33 7.33 0 00-10.37 10.37l1.42 1.42L16 28.3l10.37-10.37 1.42-1.42a7.33 7.33 0 000-10.37z"
+                                                stroke="#232321" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <button aria-label="Remove">
+                                        <svg class="w-6 h-6" viewBox="0 0 32 32" fill="none">
+                                            <rect x="4" y="8" width="24" height="20" rx="2" stroke="#232321"
+                                                stroke-width="2" />
+                                            <path d="M12 8V6a2 2 0 012-2h4a2 2 0 012 2v2M2 8h28" stroke="#232321"
+                                                stroke-width="2" stroke-linecap="round" />
+                                            <path d="M13 14v8M19 14v8" stroke="#232321" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Giá -->
+                            <span class="text-[#4A69E2] text-lg font-bold shrink-0">$130.00</span>
+                        </div>
                     </div>
                 </section>
 
